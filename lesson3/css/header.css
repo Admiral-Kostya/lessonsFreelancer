@@ -1,0 +1,6 @@
+.block-header__image {
+  width: 300px;
+}
+.block-header__image img {
+  max-width: 100%;
+}
