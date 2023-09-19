@@ -1,0 +1,16 @@
+.second-part > h2 {
+  color: blueviolet;
+}
+.second-part .second-part__bitcoin-info {
+  color: rgba(153, 138, 51, 0.801);
+}
+.second-part__image {
+  width: 400px;
+}
+.second-part__image img {
+  max-width: 100%;
+}
+
+.second-part__sub-texts > p {
+  color: rgba(51, 153, 102, 0.801);
+}

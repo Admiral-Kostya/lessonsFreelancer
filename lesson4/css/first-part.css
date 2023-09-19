@@ -1,0 +1,11 @@
+.first-part__titles h2,
+h4 {
+  color: red;
+}
+.main-info p {
+  color: rgb(231, 8, 208);
+}
+
+.additional-info * {
+  color: rgb(1, 218, 225);
+}
