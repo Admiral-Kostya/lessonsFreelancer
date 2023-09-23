@@ -1,0 +1,43 @@
+.first-part__titles h4 {
+}
+.first-part__sub-title {
+  color: #24c10c;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: line-through;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  text-shadow: 5px 5px 2px rgb(83, 241, 59);
+}
+.first-part__title {
+  color: #c1b50c;
+  font-size: 35px;
+  line-height: 1.4;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  text-shadow: 5px 5px 2px rgb(62, 59, 241);
+}
+.main-info p {
+  color: #c005ef;
+  font-size: 13px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  text-shadow: 5px 5px 2px rgb(62, 59, 241);
+}
+
+.additional-info__title,
+.additional-info__link {
+  color: #df7bf8;
+  font-size: 25px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  text-shadow: 5px 5px 2px rgb(159, 241, 59);
+}

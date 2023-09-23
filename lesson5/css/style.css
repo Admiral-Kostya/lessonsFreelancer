@@ -1,0 +1,21 @@
+/* ---------------------------- Google Fonts extension ---------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,500italic,600italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+
+/* ---------------------------- Google Fonts website ---------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400;1,500&display=swap");
+
+@import url("fonts.css"); /* ---------------------------- Manually ---------------------------- */
+@import url("reset.css");
+@import url("header.css");
+@import url("consulting.css");
+@import url("first-part.css");
+@import url("second-part.css");
+@import url("third-part.css");
+@import url("fourth-part.css");
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
