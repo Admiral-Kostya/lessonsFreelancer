@@ -1,0 +1,48 @@
+.main__jewels {
+  margin-bottom: 50px;
+}
+.jewels__container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.box-jewels {
+  display: flex;
+  column-gap: 38px;
+}
+.box-jewels__info {
+  flex: 0 1 50%;
+}
+.box-jewels__info p {
+  color: #474747;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.box-jewels__sub-title {
+  text-transform: uppercase;
+  color: #d06b00;
+  font-size: 28px;
+  margin: 21px 0px 13px 0px;
+}
+
+.box-jewels__title {
+  text-transform: capitalize;
+  color: #0e333d;
+  font-size: 59px;
+  font-family: "DM Serif Text";
+  line-height: 1.46;
+  margin-bottom: 25px;
+}
+.box-jewels__images {
+  display: flex;
+  column-gap: 22px;
+  flex: 0 1 50%;
+}
+.box-jewels__image {
+  flex: 0 1 50%;
+}
+.box-jewels__image img {
+  border-radius: 5px;
+  max-width: 100%;
+}
