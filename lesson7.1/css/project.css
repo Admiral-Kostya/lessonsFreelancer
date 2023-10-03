@@ -1,0 +1,43 @@
+.main__project {
+  margin-bottom: 50px;
+}
+
+.project__container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.project__block p {
+  color: #7d7d7d;
+  font-size: 18px;
+  line-height: 1.46;
+}
+.project__block p:not(:last-child) {
+  margin-bottom: 35px;
+}
+.project__title {
+  color: #37393f;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 1.3;
+}
+.project__title:not(:last-child) {
+  margin-bottom: 13px;
+}
+.project__list,
+.project__ol-list {
+  padding-left: 22px;
+  margin-bottom: 35px;
+}
+.project__item,
+.project__ol-item {
+  color: #7d7d7d;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.46;
+}
+.project__item:not(:last-child),
+.project__ol-item:not(:last-child) {
+  margin-bottom: 35px;
+}
