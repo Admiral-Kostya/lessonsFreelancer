@@ -1,0 +1,78 @@
+.main__develop {
+}
+.develop {
+  padding-top: 50px;
+}
+.develop__container {
+  max-width: 1135px;
+  margin: 0 auto 50px;
+  padding: 0 15px;
+}
+.develop__block {
+  display: flex;
+  align-items: center;
+  column-gap: 90px;
+}
+.develop__info {
+  opacity: 0.5;
+  flex: 0 1 46%;
+}
+.info-develop {
+}
+.info-develop p {
+  color: #606060;
+  font-size: 30px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  line-height: 1.4;
+}
+.info-develop__sub-title {
+  text-transform: uppercase;
+  color: #d58417;
+  font-size: 20px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  line-height: 1;
+}
+.info-develop__sub-title:not(:last-child) {
+  margin-bottom: 27px;
+}
+.info-develop__title {
+  color: black;
+  font-size: 64px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  line-height: 1;
+}
+.info-develop__title:not(:last-child) {
+  margin-bottom: 31px;
+}
+.develop__images {
+  padding-right: 11px;
+}
+.images-develop {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.images-develop__image {
+  position: relative;
+}
+.images-develop__image_2 {
+}
+.images-develop__image:before {
+  position: absolute;
+  content: "";
+  top: -19px;
+  left: 11px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #502203;
+  border-radius: 235px;
+  z-index: -1;
+}
+
+.images-develop__image img {
+  max-width: 100%;
+  border-radius: 235px;
+}
