@@ -1,0 +1,56 @@
+.fashion {
+  margin-bottom: 50px;
+}
+.fashion__container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.block-img-fashion {
+  display: flex;
+}
+.block-img-fashion__item {
+  flex: 0 1 50%;
+}
+.block-img-fashion__item_1 {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 183px 74px 174px 74px;
+  background: url("../img/fashion/fashion1.jpg") 50% / cover no-repeat;
+}
+.block-img-fashion__item_1 p {
+  color: white;
+  font-size: 20px;
+  font-family: "Causten";
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+.block-img-fashion__item_2 {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background: url("../img/fashion/fashion2.jpg") 50% / cover no-repeat;
+}
+.block-img-fashion__title {
+  color: white;
+  font-size: 32px;
+  font-family: "Core Sans C";
+  font-weight: 800;
+  line-height: 1.47;
+  letter-spacing: 0.21px;
+  margin-bottom: 30px;
+}
+.block-img-fashion__link {
+  display: inline-block;
+  padding: 12px 44px;
+  color: #3c4242;
+  font-size: 18px;
+  font-family: "Causten";
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.block-img-fashion__link:hover {
+  background-color: #b2b2b2;
+}

@@ -1,0 +1,101 @@
+.discover {
+  margin-bottom: 50px;
+}
+.discover__container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.discover__title-block {
+  margin-bottom: 47px;
+}
+.title-block-discover {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.title-block-discover__sub-title {
+  position: relative;
+  text-align: center;
+  color: #37393f;
+  font-size: 18px;
+  font-weight: 500;
+}
+.title-block-discover__sub-title:before {
+  position: absolute;
+  content: "";
+  top: 1.5px;
+  left: -17px;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+}
+.title-block-discover__title {
+  text-align: center;
+  color: #37393f;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 1.2;
+}
+.title-block-discover p {
+  color: #7d7d7d;
+  font-size: 18px;
+  line-height: 1.46;
+  max-width: 852px;
+  text-align: center;
+}
+
+.image-block-discover {
+  display: flex;
+  flex-direction: column;
+  row-gap: 58px;
+}
+
+.row-discover {
+  display: flex;
+  column-gap: 34px;
+}
+.row-discover__box {
+  flex: 0 1 33.333%;
+}
+.row-discover__img {
+  max-width: 383px;
+  height: 501px;
+  margin-bottom: 24px;
+}
+.row-discover__img_1 {
+  background: url("../img/discover/discover1.jpg") 50% / cover no-repeat;
+}
+.row-discover__title {
+  color: #37393f;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 10px;
+}
+.row-discover__text {
+  color: #7d7d7d;
+  font-size: 14px;
+  line-height: 1.47;
+  background: url("../img/discover/calendar.svg") no-repeat;
+  padding-left: 25px;
+}
+.row-discover__img_2 {
+  background: url("../img/discover/discover2.jpg") 50% / cover no-repeat;
+}
+.row-discover__img_3 {
+  background: url("../img/discover/discover3.jpg") 50% / cover no-repeat;
+}
+.row-discover__img_4 {
+  background: url("../img/discover/discover4.jpg") 50% / cover no-repeat;
+}
+.row-discover__img_5 {
+  background: url("../img/discover/discover5.jpg") 50% / cover no-repeat;
+}
+.row-discover__img_6 {
+  background: url("../img/discover/discover6.jpg") 50% / cover no-repeat;
+}

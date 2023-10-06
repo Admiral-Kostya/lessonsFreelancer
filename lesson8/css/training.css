@@ -1,0 +1,82 @@
+.training {
+  margin-bottom: 60px;
+}
+.training__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.training__bg-color_1 {
+  background-image: url("../img/training/training1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid rgb(243, 7, 7);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 10px 10px 7px rgb(120, 1, 1);
+  margin-bottom: 30px;
+}
+
+.training__bg-color_1,
+.training__bg-color_2,
+.training__bg-repeat,
+.training__bg-position_1 p {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.training__bg-color_2 {
+  background-image: linear-gradient(55.95deg, #b7ff3a 0%, #2a07ed 100%);
+  border: 5px solid rgb(243, 231, 7);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 10px 10px 7px rgb(176, 87, 18);
+  margin-bottom: 30px;
+}
+.training__bg-color_2 p {
+  color: black;
+}
+
+.training__bg-repeat {
+  background-image: url("../img/training/practice_1.jpg");
+  background-repeat: repeat-x;
+
+  border: 6px solid rgb(214, 75, 10);
+  border-radius: 10px;
+  box-shadow: -16px 17px 9px rgb(1, 167, 122);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.training__bg-repeat p {
+  color: #000000;
+}
+.training__bg-position_1 {
+  background-image: url("../img/training/practice_2.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-position: center;
+  border: 6px solid rgb(191, 6, 248);
+  border-radius: 10px;
+  box-shadow: -16px 17px 9px rgb(206, 220, 3);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.training__bg-position_1 p {
+  color: rgb(90, 92, 92);
+}
+
+.training__bg-position_2 {
+  background: url("../img/training/practice_2.jpg") right/200px no-repeat,
+    url("../img/training/training2.jpg") no-repeat left top / 300px,
+    url("../img/training/training3.jpg") 50% / cover no-repeat;
+  max-width: 870px;
+  height: 400px;
+  border: 6px solid rgb(47, 182, 6);
+  border-radius: 10px;
+  box-shadow: -16px 17px 9px rgb(247, 2, 2);
+}
