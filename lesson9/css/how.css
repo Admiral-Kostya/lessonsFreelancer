@@ -1,0 +1,91 @@
+.how {
+  margin-bottom: 100px;
+}
+.how__container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.how__sub-title,
+.how__title {
+  text-align: center;
+}
+
+.how__sub-title:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.how__title:not(:last-child) {
+  margin-bottom: 77px;
+}
+
+.block-how {
+  display: flex;
+}
+.block-how__item {
+  position: relative;
+  flex: 0 1 33.333%;
+  padding: 58px 43px 48px 43px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.block-how__item p {
+  color: #7d7d7d;
+  font-size: 18px;
+  line-height: 1.46;
+}
+.block-how__item p:not(:last-child) {
+  margin-bottom: 27px;
+}
+.block-how__item:not(:last-child) {
+  margin-right: 31px;
+}
+.block-how__title {
+  color: #37393f;
+  font-size: 25px;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.27;
+}
+.block-how__title:not(:last-child) {
+  margin-bottom: 16px;
+}
+.block-how__link {
+  display: inline-block;
+  color: #6b77e5;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 10px 0;
+  transition: 0.2s;
+}
+.block-how__link:hover {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #6473fc;
+  color: #f4f4f4;
+}
+.block-how__item_bg1::before,
+.block-how__item_bg2::before,
+.block-how__item_bg3::before {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.block-how__item_bg1::before {
+  background: url("../img/how/how1.svg");
+}
+.block-how__item_bg2::before {
+  background: url("../img/how/how2.svg");
+}
+.block-how__item_bg3::before {
+  background: url("../img/how/how3.svg");
+}

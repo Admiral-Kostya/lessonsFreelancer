@@ -1,0 +1,79 @@
+.jewels {
+  margin-bottom: 100px;
+}
+.jewels__container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+}
+.jewels__title {
+  display: inline-block;
+  color: black;
+  font-size: 60px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  line-height: 1.13;
+}
+.jewels__title::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  height: 2px;
+  width: 65%;
+  background-color: #78473b;
+}
+.jewels__block {
+  flex: 0 1 50%;
+}
+.block-jewels {
+  display: flex;
+  column-gap: 55px;
+}
+.block-jewels span {
+  color: black;
+  font-size: 24px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  line-height: 1.4;
+}
+.block-jewels__item {
+  flex: 0 1 50%;
+}
+.block-jewels__item_pt40 {
+  padding-top: 40px;
+}
+.block-jewels__image {
+  position: relative;
+  margin-bottom: 25px;
+}
+.block-jewels__image:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  z-index: -1;
+}
+.block-jewels__descr {
+  color: black;
+  font-size: 24px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  line-height: 1.4;
+}
+.block-jewels__descr:not(:last-child) {
+  margin-bottom: 5px;
+}
+.block-jewels__heading {
+  color: black;
+  font-size: 46px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  line-height: 1.13;
+  margin-bottom: 40px;
+}

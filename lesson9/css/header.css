@@ -1,0 +1,96 @@
+.header {
+  margin-bottom: 100px;
+  border-bottom: 1px solid rgba(130.69, 130.69, 130.69, 0.21);
+}
+.header__container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 106px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 30px;
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 700;
+}
+
+.nav-header {
+  flex: 1 1 auto;
+}
+.nav-header__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.nav-header__item:first-child {
+  margin-right: 36px;
+}
+.nav-header__item:last-child {
+  margin-right: 0;
+}
+.nav-header__item {
+  margin-right: 56px;
+  position: relative;
+}
+
+.nav-header__link {
+  display: block;
+  font-size: 20px;
+  font-family: "Merriweather";
+  line-height: 1;
+}
+.nav-header__item:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.header__button {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 29px;
+  color: white;
+  font-size: 20px;
+  font-family: "Merriweather";
+  font-weight: 700;
+  line-height: 1;
+  min-height: 46px;
+  border-radius: 5px;
+  background-color: #0e333d;
+}
+.header__button:hover {
+  background-color: #20414a;
+}
+.nav-header__item:hover > .nav-header__sub-list {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-header__sub-list {
+  padding-top: 10px;
+  list-style: none;
+  width: 150px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.nav-header__sub-link {
+  border: 1px solid #948e8e;
+  color: #fff;
+  display: block;
+  background-color: rgb(5, 5, 4);
+  padding: 10px 20px;
+  font-family: "Merriweather";
+  line-height: 1;
+  letter-spacing: 1.2px;
+}
+.nav-header__sub-link:hover {
+  background-color: rgba(166, 164, 164, 0.5);
+  color: #000;
+}

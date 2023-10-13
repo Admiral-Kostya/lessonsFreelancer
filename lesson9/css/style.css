@@ -1,0 +1,16 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url("header.css");
+@import url("training.css");
+@import url("common-heading.css");
+@import url("how.css");
+@import url("why-us.css");
+@import url("care.css");
+@import url("jewels.css");
+@import url("footer.css");
+body {
+  font-family: "Inter", sans-serif;
+}
+.wrapper {
+  overflow: hidden;
+}
