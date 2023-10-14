@@ -1,0 +1,22 @@
+.common-subtitle {
+  text-transform: capitalize;
+  color: #37393f;
+  font-size: 18px;
+  font-weight: 500;
+}
+.common-subtitle:before {
+  content: "";
+  margin-bottom: 1px;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  display: inline-block;
+}
+.common-title {
+  text-transform: capitalize;
+  color: #37393f;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 1.2;
+}
