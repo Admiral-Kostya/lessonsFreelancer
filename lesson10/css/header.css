@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+.header__title {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 500;
+  color: red;
+}

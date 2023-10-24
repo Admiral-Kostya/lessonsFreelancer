@@ -1,0 +1,52 @@
+.main {
+  margin-bottom: 100px;
+}
+.container > p:not(:last-child) {
+  margin-bottom: 40px;
+}
+.container p {
+  font-size: 30px;
+  color: aqua;
+}
+.social__box,
+.partners__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+.social__title,
+.partners__title {
+  font-size: 24px;
+  color: aquamarine;
+}
+.social__list,
+.partners__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.partners__list {
+  column-gap: 50px;
+}
+.corporation {
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+.corporation img {
+  max-width: 100%;
+}
+.box {
+  margin-bottom: 40px;
+}
+.box__play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #6b77e5;
+}
