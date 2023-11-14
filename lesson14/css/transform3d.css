@@ -1,0 +1,45 @@
+.transform3d {
+}
+
+.transform3d__body {
+}
+.body-transform3d {
+  font-size: 0;
+}
+.body-transform3d__item {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(250, 183, 142);
+}
+.translate3d-item,
+.scale3d-item {
+  perspective: 300px;
+  perspective-origin: center;
+}
+.body-transform3d__item:first-child {
+  margin-bottom: 30px;
+}
+.body-transform3d__item:not(:last-child) {
+  margin-right: 52px;
+}
+.body-transform3d__item:hover {
+  border-radius: 10px;
+}
+.body-transform3d__item:hover .translate3d,
+.body-transform3d__item:hover .scale3d,
+.body-transform3d__item:hover .rotate3d {
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.body-transform3d__item:hover .translate3d {
+  transform: translate3d(20px, 30px, 20px);
+}
+.body-transform3d__item:hover .scale3d {
+  transform: scale3d(0.9, 0.5, 1.5);
+}
+.body-transform3d__item:hover .rotate3d {
+  transform: rotate3d(4, 4, 2, 50deg);
+  /* transform: translate3d(20px, 20px, 20px) scale3d(1.3, 1.1, 1); */
+}

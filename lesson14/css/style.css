@@ -1,0 +1,19 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url("header.css");
+@import url("transform2d.css");
+@import url("transform3d.css");
+@import url("car-drawing.css");
+@import url("page.css");
+body {
+  font-family: "Inter", sans-serif;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
