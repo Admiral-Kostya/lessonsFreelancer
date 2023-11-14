@@ -1,0 +1,104 @@
+.body-transform2d {
+  font-size: 0;
+}
+.body-transform2d__item {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(250, 183, 142);
+}
+.item-perspective {
+  perspective: 500px;
+  perspective-origin: center;
+}
+.body-transform2d__item:first-child {
+  margin-bottom: 30px;
+}
+.body-transform2d__item:not(:last-child) {
+  margin-right: 52px;
+}
+.body-transform2d__item:hover {
+  border-radius: 10px;
+}
+.body-transform2d__item:hover .translate,
+.body-transform2d__item:hover .scale,
+.body-transform2d__item:hover .rotate,
+.body-transform2d__item:hover .skew,
+.body-transform2d__item:hover .multi-transform,
+.body-transform2d__item:hover .transform-origin,
+.body-transform2d__item:hover .perspective-origin {
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.body-transform2d__item:hover .translate {
+  transform: translate(-10%, 10%);
+}
+.body-transform2d__item:hover .scale {
+  transform: scale(0.8);
+}
+.body-transform2d__item:hover .rotate {
+  transform: rotate(30deg);
+  /* transform: rotateX(180deg);
+  transform: rotateY(180deg); */
+}
+.body-transform2d__item:hover .skew {
+  transform: skew(-10deg, 0deg);
+}
+.body-transform2d__item:hover .multi-transform {
+  transform: translate(10%, 30%) scale(0.8) rotate(50deg) skew(40deg, 20deg);
+}
+
+.body-transform2d__item:hover .transform-origin {
+  transform-origin: bottom left;
+  transform: rotate(20deg);
+}
+.body-transform2d__item:hover .perspective-origin {
+  transform: rotateX(50deg);
+}
+.body-transform__inner {
+  width: 200px;
+  height: 200px;
+  background-color: #04efac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-transform__inner span {
+  padding: 0 10px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: rgb(219, 109, 63);
+}
+.skew__block {
+  display: flex;
+  justify-content: center;
+}
+.skew__link {
+  font-size: 50px;
+  padding: 20px;
+  position: relative;
+}
+.skew__link span {
+  display: inline-block;
+  position: relative;
+  color: #04efac;
+}
+.skew__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #9c6aca;
+  transform: skew(0deg, 0deg);
+}
+.skew__link:hover span {
+  transform: scale(0.94);
+}
+.skew__link:hover::before {
+  transform: skew(-20deg, 0deg);
+}
