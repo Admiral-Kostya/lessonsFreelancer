@@ -1,0 +1,95 @@
+.wishlist__container {
+  max-width: 925px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.wishlist__title-block {
+  margin-bottom: 50px;
+}
+.wishlist__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.item-wishlist {
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #edeef2;
+}
+.item-wishlist__close {
+  margin-right: 36px;
+  cursor: pointer;
+  align-self: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 14px;
+  min-width: 14px;
+  flex-basis: 14px;
+  background: url("../img/Wishlist/close-cross.svg") center no-repeat;
+  transition: 0.3s ease;
+}
+.item-wishlist__close:hover {
+  transform: scale(1.05);
+}
+.item-wishlist__content {
+  flex-grow: 1;
+}
+.content-wishlist {
+  display: flex;
+  align-items: center;
+  column-gap: 36px;
+  padding-right: 10px;
+}
+.content-wishlist__image {
+  flex-shrink: 0;
+}
+.content-wishlist__image img {
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+.content-wishlist__image:hover img {
+  transform: scale(1.05);
+}
+.content-wishlist__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  flex-grow: 1;
+}
+.content-wishlist__title {
+  color: #3c4242;
+  font-size: 22px;
+  font-family: "Causten";
+  font-weight: 700;
+  letter-spacing: 0.44px;
+}
+.content-wishlist__color,
+.content-wishlist__color span,
+.content-wishlist__qty,
+.content-wishlist__qty span {
+  font-size: 22px;
+  font-family: "Causten";
+  font-weight: 500;
+  letter-spacing: 0.44px;
+}
+.content-wishlist__color span,
+.content-wishlist__qty span {
+  color: #3c4242;
+}
+.content-wishlist__color,
+.content-wishlist__qty {
+  color: #807d7e;
+}
+.add-wishlist {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+.add-wishlist__price {
+  color: #807d7e;
+  font-size: 22px;
+  font-family: "Causten";
+  font-weight: 700;
+  letter-spacing: 0.44px;
+}
