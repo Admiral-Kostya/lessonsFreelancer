@@ -1,0 +1,11 @@
+.main__categories,
+.main__tabs,
+.main__wishlist,
+.main__request,
+.main__inform,
+.main__checkout {
+  margin-bottom: 100px;
+}
+.main__request {
+  padding-top: 200px;
+}

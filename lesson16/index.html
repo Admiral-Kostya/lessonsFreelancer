@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson 16</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__body body-header">
+          <a href="#" class="body-header__logo">
+            <img src="img/logo.svg" alt="logo">
+          </a>
+          <form action="#" class="body-header__form form-header">
+            <div class="form-header__item">
+              <input id="search" name="search" placeholder="Search" type="search">
+            </div>
+          </form>
+          <div class="body-header__languages">
+            English (united States)
+            <ul class="body-header__list">
+              <li class="body-header__item">
+                <a href="#" class="body-header__link">Ukrainian</a>
+              </li>
+              <li class="body-header__item">
+                <a href="#" class="body-header__link">Italian</a>
+              </li>
+              <li class="body-header__item">
+                <a href="#" class="body-header__link">Spanish</a>
+              </li>
+            </ul>
+          </div>
+          <div class="body-header__button-block block-button">
+            <a href="#" class="block-button__login button">Login</a>
+            <a href="#" class="block-button__sign-up button">Sign-Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__request request">
+        <div class="request__container">
+          <div class="request__title-block block-title-common">
+            <div class="block-title-common__label">
+              Contact Us
+            </div>
+            <h2 class="block-title-common__title">
+              Request A Call Back !
+            </h2>
+          </div>
+          <form id="first-form" action="#" enctype="multipart/form-data" method="GET" class="request__form form">
+            <div class="form__body">
+              <div class="form__item">
+                <input autocomplete="on" name="name" placeholder="Your Name" type="text">
+              </div>
+              <div class="form__item">
+                <input autocomplete="on" name="email" placeholder="Email Address" type="email">
+              </div>
+              <div class="form__item">
+                <input autocomplete="off" name="phone" placeholder="Phone Number" type="tel">
+              </div>
+              <div class="form__item">
+                <input name="mail" placeholder="Subject" type="email">
+              </div>
+              <div class="form__item form__item_text-area">
+                <textarea class="form__text-area" name="Message..." placeholder="Message..."></textarea>
+              </div>
+            </div>
+          </form>
+          <button form="first-form" type="submit" class="form-button">submit</button>
+        </div>
+      </div>
+      <div class="main__inform inform">
+        <div class="inform__container">
+          <div class="inform__title-block block-title">
+            <h3 class="block-title__heading heading">
+              My Info
+            </h3>
+            <h4 class="block-title__sub-heading sub-heading">
+              Add Address
+            </h4>
+          </div>
+          <form id="second-form" action="#" enctype="multipart/form-data" method="GET" class="inform__form form-info">
+            <div class="form-info__body">
+              <div class="form-info__item">
+                <label for="name">First Name*</label>
+                <input id="name" required autocomplete="on" name="name" placeholder="First Name" type="text">
+              </div>
+              <div class="form-info__item">
+                <label for="surname">Last Name*</label>
+                <input id="surname" required autocomplete="on" name="name" placeholder="Last Name" type="text">
+              </div>
+              <div class="form-info__item">
+                <label for="country">Country / Region*</label>
+                <input id="country" required autocomplete="on" name="name" placeholder="Country / Region" type="text">
+              </div>
+              <div class="form-info__item">
+                <label for="company">Company Name</label>
+                <input id="company" required autocomplete="on" name="name" placeholder="Company Name" type="text">
+              </div>
+              <div class="form-info__item">
+                <label for="street">Street Address*</label>
+                <input id="street" required autocomplete="on" name="street" placeholder="Street Address" type="text">
+              </div>
+              <div class="form-info__item">
+                <label for="apt">Apt, suite, unit</label>
+                <input id="apt" required autocomplete="on" name="apt" placeholder="Apt, suite, unit" type="text">
+              </div>
+              <div class="form-info__item">
+                <label for="city">City*</label>
+                <input id="city" required autocomplete="on" name="city" placeholder="City" type="text">
+              </div>
+              <div class="form-info__item">
+                <label for="state">State*</label>
+                <select class="select" name="list">
+                  <option class="select__option" value="01">Item №1</option>
+                  <option class="select__option" value="02">Item №2</option>
+                  <option class="select__option" value="03">Item №3</option>
+                  <option class="select__option" selected value="04">Item №4</option>
+                </select>
+              </div>
+              <div class="form-info__item">
+                <label for="phone">Phone*</label>
+                <input id="phone" autocomplete="off" placeholder="Phone" name="phone" type="tel">
+              </div>
+              <div class="form-info__item">
+                <label for="postalCode">Postal Code*</label>
+                <input id="postalCode" autocomplete="off" placeholder="Postal Code" name="postalCode" type="number">
+              </div>
+              <div class="form-info__item form-info__item_text-area">
+                <label for="textarea">Delivery Instruction</label>
+                <textarea id="textarea" class="form-info__text-area" name="textarea"
+                  placeholder="Delivery Instruction"></textarea>
+              </div>
+            </div>
+            <div class="form-info__checkbox checkbox">
+              <div class="checkbox__item">
+                <input id="check1" class="checkbox__input" required autocomplete="off" name="check1" type="checkbox">
+                <label class="checkbox__label" for="check1">
+                  <span class="checkbox__text">Set as default shipping address</span>
+                </label>
+              </div>
+              <div class="checkbox__item">
+                <input id="check2" class="checkbox__input" required autocomplete="off" name="check2" type="checkbox">
+                <label class="checkbox__label" for="check2">
+                  <span class="checkbox__text">Set as default billing address</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-info__buttons buttons">
+              <button type="submit" class="buttons__submit">Save</button>
+              <button type="reset" class="buttons__reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="main__checkout checkout">
+        <div class="checkout__container">
+          <div class="checkout__blocks">
+            <div class="checkout__billing-block block-billing">
+              <div class="block-billing__title-block block-title">
+                <h3 class="block-title__heading heading heading-decor">
+                  Check Out
+                </h3>
+                <h4 class="block-title__sub-heading sub-heading">
+                  Billing Details
+                </h4>
+              </div>
+              <form id="third-form" action="#" enctype="multipart/form-data" method="GET"
+                class="block-billing__form form-info ">
+                <div class="form-info__body form-info__body_mb43">
+                  <div class="form-info__item">
+                    <label for="name">First Name*</label>
+                    <input id="name" required autocomplete="on" name="name" placeholder="First Name" type="text">
+                  </div>
+                  <div class="form-info__item">
+                    <label for="surname">Last Name*</label>
+                    <input id="surname" required autocomplete="on" name="name" placeholder="Last Name" type="text">
+                  </div>
+                  <div class="form-info__item">
+                    <label for="country">Country / Region*</label>
+                    <input id="country" required autocomplete="on" name="name" placeholder="Country / Region"
+                      type="text">
+                  </div>
+                  <div class="form-info__item">
+                    <label for="company">Company Name</label>
+                    <input id="company" required autocomplete="on" name="name" placeholder="Company Name" type="text">
+                  </div>
+                  <div class="form-info__item">
+                    <label for="street">Street Address*</label>
+                    <input id="street" required autocomplete="on" name="street" placeholder="Street Address"
+                      type="text">
+                  </div>
+                  <div class="form-info__item">
+                    <label for="apt">Apt, suite, unit</label>
+                    <input id="apt" required autocomplete="on" name="apt" placeholder="Apt, suite, unit" type="text">
+                  </div>
+                  <div class="form-info__row-block block-row">
+                    <div class="block-row__item">
+                      <label for="city">City*</label>
+                      <input id="city" required autocomplete="on" name="city" placeholder="City" type="text">
+                    </div>
+                    <div class="block-row__item">
+                      <label for="state">State*</label>
+                      <select class="select" name="list">
+                        <option class="select__option" value="01">Item №1</option>
+                        <option class="select__option" value="02">Item №2</option>
+                        <option class="select__option" value="03">Item №3</option>
+                        <option class="select__option" selected value="04">Item №4</option>
+                      </select>
+                    </div>
+                    <div class="block-row__item">
+                      <label for="postalCode">Postal Code*</label>
+                      <input id="postalCode" autocomplete="off" placeholder="Postal Code" name="postalCode"
+                        type="number">
+                    </div>
+                  </div>
+                  <div class="form-info__item form-info__item_fg0">
+                    <label for="phone">Phone*</label>
+                    <input id="phone" autocomplete="off" placeholder="Phone" name="phone" type="tel">
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button type="submit" class="buttons__submit buttons__submit_mb20">
+                    Continue to delivery
+                  </button>
+                </div>
+                <div class=" checkbox">
+                  <div class="checkbox__item">
+                    <input id="check3" class="checkbox__input" required autocomplete="off" name="check3"
+                      type="checkbox">
+                    <label class="checkbox__label" for="check3">
+                      <span class="checkbox__text">Save my information for a faster checkout</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="checkout__address-box box-address">
+              <h3 class="box-address__title">
+                Shipping Address
+              </h3>
+              <div class="box-address__descr">
+                Select the address that matches your card or payment method.
+              </div>
+              <form id="fourth-form" action="#" enctype="multipart/form-data" method="GET">
+                <div class="box-address__box">
+                  <div class="box-address__radio box-address__radio_pb-mb">
+                    <input class="box-address__input" checked id="address-01" name="address" value="Billing-Address"
+                      type="radio">
+                    <label class="box-address__label" for="address-01">Same as Billing address</label>
+                  </div>
+                  <div class="box-address__radio">
+                    <input class="box-address__input" id="address-02" name="address" value="Shipping-Address"
+                      type="radio">
+                    <label class="box-address__label" for="address-02">Use a different shipping address</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="checkout__shipping-box box-shipping">
+              <h3 class="box-shipping__title">
+                Shipping Method
+              </h3>
+              <div class="box-shipping__info info-box-shipping">
+                <div class="info-box-shipping__date">
+                  <span>
+                    Arrives by Monday, June 7
+                  </span>
+                </div>
+                <div class="info-box-shipping__price">
+                  <div class="info-box-shipping__delivery-block">
+                    <div class="info-box-shipping__main">Delivery Charges</div>
+                    <div class="info-box-shipping__additional">Additional fess may apply</div>
+                  </div>
+                  <div class="info-box-shipping__cost">$5.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__payment-box box-address">
+              <h3 class="box-address__title">
+                Payment Method
+              </h3>
+              <div class="box-address__descr">
+                All transactions are secure and encrypted.
+              </div>
+              <form id="fifth-form" action="#" enctype="multipart/form-data" method="GET">
+                <div class="box-address__box box-address__box_mb50">
+                  <div class="box-address__top-block">
+                    <div class="box-address__radio box-address__radio_mb30">
+                      <input class="box-address__input" checked id="address-001" name="address2" value="Credit-Card"
+                        type="radio">
+                      <label class="box-address__label box-address__label_modified" for="address-001">
+                        <span class="box-address__method">Credit Card</span>
+                        <span class="box-address__text">We accept all major credit cards.</span>
+                      </label>
+                    </div>
+                    <div class="box-address__additional-info">
+                      <div class="box-address__methods">
+                        <a href="#" class="box-address__link">
+                          <img src="img/googlePay.svg" alt="googlePay">
+                        </a>
+                        <a href="#" class="box-address__link">
+                          <img src="img/visa.svg" alt="visa">
+                        </a>
+                        <a href="#" class="box-address__link">
+                          <img src="img//paypal.svg" alt="paypal">
+                        </a>
+                        <a href="#" class="box-address__link">
+                          <img src="img/paypass.svg" alt="paypass">
+                        </a>
+                      </div>
+                      <div class="box-address__fields">
+                        <div class="box-address__field">
+                          <input id="card-number" autocomplete="on" name="number" placeholder="Card number" type="text">
+                        </div>
+                        <div class="box-address__field">
+                          <input id="card-name" autocomplete="on" name="name" placeholder="Name of card" type="text">
+                        </div>
+                        <div class="box-address__field">
+                          <input id="card-validity" autocomplete="on" name="validity"
+                            placeholder="Expiration date (MM/YY)" type="text">
+                        </div>
+                        <div class="box-address__field">
+                          <input id="card-code" autocomplete="on" name="code" placeholder="Security Code" type="text">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-address__radio box-address__radio_pb-mb">
+                    <input class="box-address__input" id="address-002" name="address2" value="Cash" type="radio">
+                    <label class="box-address__label box-address__label_modified" for="address-002">
+                      <span class="box-address__method">Cash on delivery</span>
+                      <span class="box-address__text">Pay with cash upon delivery.</span>
+                    </label>
+                  </div>
+                  <div class="box-address__radio">
+                    <input class="box-address__input" id="address-003" name="address2" value="Paypal" type="radio">
+                    <label class="box-address__label" for="address-003">Paypal</label>
+                  </div>
+                </div>
+              </form>
+              <button class="box-address__button" form="fifth-form" type="submit">Pay Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__categories categories">
+        <div class="categories__container">
+          <div class="categories__title-block block-title">
+            <h3 class="block-title__heading heading-fs34  heading-decor">
+              Categories For Men
+            </h3>
+          </div>
+          <div class="categories__body body-categories">
+            <div class="body-categories__column">
+              <div class="body-categories__item">
+                <a href="#" class="body-categories__img">
+                  <img src="img/MenCategories/man1.webp" alt="man1">
+                </a>
+                <div class="body-categories__block">
+                  <div class="body-categories__content">
+                    <h4 class="body-categories__title">
+                      <a href="" class="body-categories__link-title">Shirts</a>
+                    </h4>
+                    <div class="body-categories__label">Explore Now!</div>
+                  </div>
+                  <a href="#" class="body-categories__link">
+                    <div></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="body-categories__column">
+              <div class="body-categories__item">
+                <a href="#" class="body-categories__img">
+                  <img src="img/MenCategories/man2.webp" alt="man2">
+                </a>
+                <div class="body-categories__block">
+                  <div class="body-categories__content">
+                    <h4 class="body-categories__title">
+                      <a href="" class="body-categories__link-title">Printed T-Shirts</a>
+                    </h4>
+                    <div class="body-categories__label">Explore Now!</div>
+                  </div>
+                  <a href="#" class="body-categories__link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="body-categories__column">
+              <div class="body-categories__item">
+                <a href="#" class="body-categories__img">
+                  <img src="img/MenCategories/man3.webp" alt="man3">
+                </a>
+                <div class="body-categories__block">
+                  <div class="body-categories__content">
+                    <h4 class="body-categories__title">
+                      <a href="" class="body-categories__link-title">Plain T-Shirt</a>
+                    </h4>
+                    <div class="body-categories__label">Explore Now!</div>
+                  </div>
+                  <a href="#" class="body-categories__link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="body-categories__column">
+              <div class="body-categories__item">
+                <a href="#" class="body-categories__img">
+                  <img src="img/MenCategories/man4.webp" alt="man4">
+                </a>
+                <div class="body-categories__block">
+                  <div class="body-categories__content">
+                    <h4 class="body-categories__title">
+                      <a href="" class="body-categories__link-title">Polo T-Shirt</a>
+                    </h4>
+                    <div class="body-categories__label">Explore Now! </div>
+                  </div>
+                  <a href="#" class="body-categories__link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="body-categories__column">
+              <div class="body-categories__item">
+                <a href="#" class="body-categories__img">
+                  <img src="img/MenCategories/man5.webp" alt="man5">
+                </a>
+                <div class="body-categories__block">
+                  <div class="body-categories__content">
+                    <h4 class="body-categories__title">
+                      <a href="" class="body-categories__link-title">Hoodies & Sweetshirt</a>
+                    </h4>
+                    <div class="body-categories__label">Explore Now! </div>
+                  </div>
+                  <a href="#" class="body-categories__link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="body-categories__column">
+              <div class="body-categories__item">
+                <a href="#" class="body-categories__img">
+                  <img src="img/MenCategories/man6.webp" alt="man6">
+                </a>
+                <div class="body-categories__block">
+                  <div class="body-categories__content">
+                    <h4 class="body-categories__title">
+                      <a href="" class="body-categories__link-title">Jeans</a>
+                    </h4>
+                    <div class="body-categories__label">Explore Now! </div>
+                  </div>
+                  <a href="#" class="body-categories__link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="body-categories__column">
+              <div class="body-categories__item">
+                <a href="#" class="body-categories__img">
+                  <img src="img/MenCategories/man7.webp" alt="man7">
+                </a>
+                <div class="body-categories__block">
+                  <div class="body-categories__content">
+                    <h4 class="body-categories__title">
+                      <a href="" class="body-categories__link-title">Activewear</a>
+                    </h4>
+                    <div class="body-categories__label">Explore Now! </div>
+                  </div>
+                  <a href="#" class="body-categories__link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="body-categories__column">
+              <div class="body-categories__item">
+                <a href="#" class="body-categories__img">
+                  <img src="img/MenCategories/man8.webp" alt="man8">
+                </a>
+                <div class="body-categories__block">
+                  <div class="body-categories__content">
+                    <h4 class="body-categories__title">
+                      <a href="" class="body-categories__link-title">Boxers</a>
+                    </h4>
+                    <div class="body-categories__label">Explore Now! </div>
+                  </div>
+                  <a href="#" class="body-categories__link"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__tabs tabs">
+        <div class="tabs__container">
+          <div class="tabs__title-block block-title">
+            <div class="block-title__heading heading">My Orders</div>
+          </div>
+          <div class="tabs__body body-tabs">
+            <div class="body-tabs__items">
+              <div class="body-tabs__item">Active</div>
+              <div class="body-tabs__item">Cancelled</div>
+              <div class="body-tabs__item">Completed</div>
+            </div>
+            <div class="body-tabs__content content-tabs">
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab1.webp" alt="tab1">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Black Printed T-shirt</h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : Pink
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $23.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab2.webp" alt="tab2">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Printed blue & white Cote </h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : White
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $143.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab3.webp" alt="tab3">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Blue Shirt</h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : Blue
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $93.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="body-tabs__content content-tabs">
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab3.webp" alt="tab3">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Blue Shirt</h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : Blue
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $93.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab1.webp" alt="tab1">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Black Printed T-shirt</h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : Pink
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $23.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab2.webp" alt="tab2">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Printed blue & white Cote </h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : White
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $143.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="body-tabs__content content-tabs">
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab2.webp" alt="tab2">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Printed blue & white Cote </h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : White
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $143.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab1.webp" alt="tab1">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Black Printed T-shirt</h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : Pink
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $23.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+              <div class="content-tabs__block">
+                <div class="content-tabs__general-info info-general">
+                  <h3 class="info-general__title">
+                    Order no: #123456789
+                  </h3>
+                  <div class="info-general__box">
+                    <div class="info-general__left-side">
+                      <div class="info-general__order-date">
+                        <span>Order Date</span>: 2 June 2023 2:40 PM
+                      </div>
+                      <div class="info-general__delivery-date">
+                        <span>Estimated Delivery Date</span> : 8 June 2023
+                      </div>
+                    </div>
+                    <div class="info-general__right-side side-right">
+                      <div class="side-right__status">
+                        <span>Order Status</span> : In progress
+                      </div>
+                      <div class="side-right__method">
+                        <span>Payment Method</span> : Cash on delivery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-tabs__main-info info-main">
+                  <div class="info-main__image-block block-image">
+                    <a href="#" class="block-image__img">
+                      <img src="img/TabsImages/tab3.webp" alt="tab3">
+                    </a href="#">
+                    <div class="block-image__descr">
+                      <h4 class="block-image__title">Blue Shirt</h4>
+                      <div class="block-image__color">
+                        <span>Color</span> : Blue
+                      </div>
+                      <div class="block-image__qty">
+                        <span>Qty</span> : 1
+                      </div>
+                      <div class="block-image__price">
+                        Total : $93.00
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="info-main__button button">View Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__wishlist wishlist">
+        <div class="wishlist__container">
+          <div class="wishlist__title-block block-title">
+            <div class="block-title__heading heading">Wishlist</div>
+          </div>
+          <div class="wishlist__items">
+            <div class="wishlist__item item-wishlist">
+              <div class="item-wishlist__close"></div>
+              <div class="item-wishlist__content content-wishlist">
+                <a href="#" class="content-wishlist__image">
+                  <img src="img/Wishlist/wishimg1.webp" alt="wishimg1">
+                </a>
+                <div class="content-wishlist__info">
+                  <h3 class="content-wishlist__title">Blue Flower Print Crop Top</h3>
+                  <div class="content-wishlist__color">
+                    <span> Color</span> : Yellow
+                  </div>
+                  <div class="content-wishlist__qty">
+                    <span>Quantity</span> : 1
+                  </div>
+                </div>
+              </div>
+              <div class="item-wishlist__add add-wishlist">
+                <div class="add-wishlist__price">$29.00</div>
+                <a href="#" class="add-wishlist__link button">Add to cart</a>
+              </div>
+            </div>
+            <div class="wishlist__item item-wishlist">
+              <div class="item-wishlist__close"></div>
+              <div class="item-wishlist__content content-wishlist">
+                <a href="#" class="content-wishlist__image">
+                  <img src="img/Wishlist/wishimg2.webp" alt="wishimg2">
+                </a>
+                <div class="content-wishlist__info">
+                  <h3 class="content-wishlist__title">Yellow Flower Print Dress </h3>
+                  <div class="content-wishlist__color">
+                    <span> Color</span> : Yellow
+                  </div>
+                  <div class="content-wishlist__qty">
+                    <span>Quantity</span> : 1
+                  </div>
+                </div>
+              </div>
+              <div class="item-wishlist__add add-wishlist">
+                <div class="add-wishlist__price">$78.00</div>
+                <a href="#" class="add-wishlist__link button">Add to cart</a>
+              </div>
+            </div>
+            <div class="wishlist__item item-wishlist">
+              <div class="item-wishlist__close"></div>
+              <div class="item-wishlist__content content-wishlist">
+                <a href="#" class="content-wishlist__image">
+                  <img src="img/Wishlist/wishimg3.webp" alt="wishimg3">
+                </a>
+                <div class="content-wishlist__info">
+                  <h3 class="content-wishlist__title">White Hoodie long sleeve </h3>
+                  <div class="content-wishlist__color">
+                    <span> Color</span> : Yellow
+                  </div>
+                  <div class="content-wishlist__qty">
+                    <span>Quantity</span> : 1
+                  </div>
+                </div>
+              </div>
+              <div class="item-wishlist__add add-wishlist">
+                <div class="add-wishlist__price">$134.00</div>
+                <a href="#" class="add-wishlist__link button">Add to cart</a>
+              </div>
+            </div>
+            <div class="wishlist__item item-wishlist">
+              <div class="item-wishlist__close"></div>
+              <div class="item-wishlist__content content-wishlist">
+                <a href="#" class="content-wishlist__image">
+                  <img src="img/Wishlist/wishimg4.webp" alt="wishimg4">
+                </a>
+                <div class="content-wishlist__info">
+                  <h3 class="content-wishlist__title">Brown men’s long sleeve T-shirt </h3>
+                  <div class="content-wishlist__color">
+                    <span> Color</span> : Yellow
+                  </div>
+                  <div class="content-wishlist__qty">
+                    <span>Quantity</span> : 1
+                  </div>
+                </div>
+              </div>
+              <div class="item-wishlist__add add-wishlist">
+                <div class="add-wishlist__price">$93.00</div>
+                <a href="#" class="add-wishlist__link button">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__body body-footer">
+          <div class="body-footer__top top-body">
+            <div class="top-body__item item-top">
+              <h2 class="item-top__title">
+                Need Help
+              </h2>
+              <ul class="item-top__list">
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Contact Us</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Track Order</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Returns & Refunds</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">FAQ's</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Career</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-body__item item-top">
+              <h2 class="item-top__title">
+                Company
+              </h2>
+              <ul class="item-top__list">
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">About Us</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">euphoria Blog</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">euphoriastan</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Collaboration</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Media</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-body__item item-top">
+              <h2 class="item-top__title">
+                More Info
+              </h2>
+              <ul class="item-top__list">
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Term and Conditions</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Privacy Policy</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Shipping Policy</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Sitemap</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-body__item item-top">
+              <h2 class="item-top__title">
+                Location
+              </h2>
+              <ul class="item-top__list">
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">support@euphoria.in</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">Eklingpura Chouraha, Ahmedabad Main Road</a>
+                </li>
+                <li class="item-top__item">
+                  <a href="#" class="item-top__link">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-body__social-block block-social">
+              <div class="block-social__icons icons-block">
+                <a href="#" class="icons-block__item">
+                  <img src="img/footer/twitter.svg" alt="twitter">
+                </a>
+                <a href="#" class="icons-block__item">
+                  <img src="img/footer/insta.svg" alt="insta">
+                </a>
+                <a href="#" class="icons-block__item">
+                  <img src="img/footer/facebook.svg" alt="facebook">
+                </a>
+                <a href="#" class="icons-block__item">
+                  <img src="img/footer/linkedIn.svg" alt="linkedIn">
+                </a>
+
+              </div>
+              <div class="block-social__apps apps-block">
+                <h2 class="apps-block__title">
+                  Download The App
+                </h2>
+                <div class="apps-block__items">
+                  <a href="#" class="apps-block__link">
+                    <div class="apps-block__image">
+                      <img src="img/footer/googlePlay.svg" alt="googlePlay">
+                    </div>
+                    <div class="apps-block__info">
+                      <div class="apps-block__text">android app on</div>
+                      <div class="apps-block__label">Google Play</div>
+                    </div>
+                  </a>
+                  <a href="#" class="apps-block__link">
+                    <div class="apps-block__image">
+                      <img src="img/footer/appStore.svg" alt="appStore">
+                    </div>
+                    <div class="apps-block__info">
+                      <div class="apps-block__text">Available on the</div>
+                      <div class="apps-block__label">App Store</div>
+                    </div>
+                  </a>
+                  <div class="apps-block__item"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-footer__middle middle-body">
+            <div class="middle-body__cotegories">
+              <h2 class="middle-body__title">
+                Popular Categories
+                <ul class="middle-body__list">
+                  <li class="middle-body__item">
+                    <a href="#" class="middle-body__link">Item 1</a>
+                  </li>
+                  <li class="middle-body__item">
+                    <a href="#" class="middle-body__link">Item 2</a>
+                  </li>
+                  <li class="middle-body__item">
+                    <a href="#" class="middle-body__link">Item 3</a>
+                  </li>
+                </ul>
+              </h2>
+
+            </div>
+          </div>
+          <div class="body-footer__bottom bottom-body">
+            <div class="bottom-body__block">
+              <p>
+                Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

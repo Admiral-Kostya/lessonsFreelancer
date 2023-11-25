@@ -1,0 +1,126 @@
+.inform__container {
+  max-width: 925px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.inform__title-block {
+  margin-bottom: 50px;
+}
+
+.form-info__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -21px 30px -21px;
+  row-gap: 30px;
+}
+.form-info__item {
+  min-width: 280px;
+  flex: 1 1 50%;
+  padding: 0 21px;
+}
+.form-info__item > label {
+  display: inline-block;
+  color: #3c4242;
+  font-size: 18px;
+  font-family: "Causten";
+  font-weight: 600;
+  letter-spacing: 0.36px;
+  margin-bottom: 10px;
+}
+.form-info__item input,
+.form-info__item select {
+  border-radius: 8px;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 18px 22px;
+}
+.form-info__item input:focus,
+.form-info__item select:focus,
+.form-info__text-area:focus {
+  outline: 1px solid rgb(0, 195, 255);
+}
+.form-info__item input::placeholder {
+  color: #807d7e;
+  font-size: 16px;
+  font-family: "Causten";
+}
+.form-info__item_text-area {
+  flex: 1 1 100%;
+}
+.form-info__text-area {
+  width: 100%;
+  min-height: 149px;
+  padding: 21px 40px 20px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+.form-info__checkbox {
+  margin-bottom: 60px;
+}
+
+.checkbox {
+  position: relative;
+}
+.checkbox__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.checkbox__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.checkbox__label {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 10px;
+}
+.checkbox__label::before {
+  content: "";
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #bebcbd;
+  border-radius: 2.2px;
+  transition: all 0.3s ease-in-out;
+}
+.checkbox__text {
+  align-self: center;
+}
+.checkbox__input:checked + .checkbox__label::before {
+  background: url("../img/check-mark.svg") center / 100% no-repeat;
+}
+.form-info__buttons {
+  display: flex;
+  column-gap: 30px;
+}
+
+.buttons__submit,
+.buttons__reset {
+  text-align: center;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-size: 20.09px;
+  font-family: "Causten";
+  transition: background-color 0.3s;
+}
+.buttons__submit {
+  color: white;
+  background-color: #8a33fd;
+}
+.buttons__submit:hover {
+  background-color: #7c1df9;
+}
+.buttons__reset {
+  color: #807d7e;
+  background-color: #f6f6f6;
+  font-weight: 700;
+  font-weight: 600;
+}
+.buttons__reset:hover {
+  background-color: #d4d3d3;
+}

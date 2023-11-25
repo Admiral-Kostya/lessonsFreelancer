@@ -1,0 +1,40 @@
+.block-title__heading:not(:last-child) {
+  margin-bottom: 20px;
+}
+.heading,
+.heading-fs34 {
+  color: #3c4242;
+  font-family: "Core Sans C";
+  font-weight: 600;
+}
+.heading {
+  font-size: 28px;
+  line-height: 1.19;
+  letter-spacing: 0.56px;
+}
+.heading-fs34 {
+  font-size: 34px;
+  line-height: 0.8;
+  letter-spacing: 0.68px;
+}
+.heading-decor {
+  display: inline-flex;
+  gap: 20px;
+}
+.heading-decor::before {
+  content: "";
+  flex: 0 0 6px;
+  width: 6px;
+  height: 28px;
+  border-radius: 10px;
+  background-color: #8a33fd;
+}
+
+.sub-heading {
+  color: #3c4242;
+  font-size: 22px;
+  font-family: "Core Sans C";
+  font-weight: 600;
+  line-height: 33.5px;
+  letter-spacing: 1.5px;
+}
