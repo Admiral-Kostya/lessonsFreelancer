@@ -1,0 +1,121 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  border-bottom: 1px solid #807d7e;
+}
+.header__container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.body-header {
+  min-height: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.body-header__logo {
+  padding-right: 10px;
+}
+.body-header__logo img {
+  max-width: 100%;
+}
+
+.form-header {
+  flex: 0 0 184px;
+}
+.form-header__item {
+  min-width: 184px;
+  position: relative;
+}
+.form-header__item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 48px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/search.svg");
+  z-index: 2;
+}
+.form-header__item input {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  padding: 12px 10px 12px 80px;
+  color: #807d7e;
+  font-size: 18px;
+  font-family: "Causten";
+  font-weight: 500;
+}
+
+.body-header__languages {
+  color: #000;
+  white-space: nowrap;
+  cursor: pointer;
+  padding-left: 10px;
+  display: flex;
+  justify-content: end;
+  padding-right: 30px;
+  position: relative;
+}
+
+.body-header__languages:hover .body-header__list {
+  opacity: 1;
+  visibility: visible;
+}
+.body-header__list {
+  padding-top: 10px;
+  min-width: 150px;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 20%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.body-header__link {
+  border: 1px solid #185768;
+  color: #fff;
+  display: block;
+  background-color: #0e333d;
+  padding: 10px 20px;
+  font-family: "Causten";
+  line-height: 1;
+  letter-spacing: 1.2px;
+}
+.body-header__link:hover {
+  background-color: #355d68;
+}
+.body-header__languages::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3px;
+  width: 10px;
+  height: 5px;
+  background: url("../img/arrow.svg");
+  transition: all 0.3s ease;
+}
+.body-header__languages:hover::after {
+  transform: rotateX(180deg);
+  top: 30%;
+}
+.block-button {
+  display: flex;
+  column-gap: 29px;
+}
+.block-button__login {
+  flex: 1 1 auto;
+}
+.block-button__sign-up {
+  flex: 1 1 auto;
+}

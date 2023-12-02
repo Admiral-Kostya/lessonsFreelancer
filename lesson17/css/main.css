@@ -1,0 +1,13 @@
+.main__products {
+  padding-top: 200px;
+}
+.main__products,
+.main__popular,
+.main__best-seller,
+.main__develop,
+.main__solutions {
+  margin-bottom: 100px;
+}
+.main__best-seller {
+  padding: 125px 0px 125px 0px;
+}
