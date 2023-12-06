@@ -1,0 +1,21 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url("header.css");
+@import url("main.css");
+@import url("hero.css");
+@import url("design.css");
+@import url("products.css");
+@import url("common-btn.css");
+@import url("footer.css");
+body {
+  font-family: "Inter", sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
