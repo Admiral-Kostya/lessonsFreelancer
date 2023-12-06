@@ -1,0 +1,156 @@
+.products__wrapper {
+  padding: 94px 0;
+  background-color: #0e333d;
+}
+.products__container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.products__title {
+  color: white;
+  font-size: 48px;
+  font-family: "DM Serif Text";
+  font-weight: 400;
+  line-height: 1.27;
+  text-align: center;
+}
+.products__title:not(:last-child) {
+  margin-bottom: 23px;
+}
+.products__descr {
+  text-align: center;
+  color: #ebebeb;
+  font-size: 20px;
+  font-family: "Raleway";
+  font-weight: 500;
+  line-height: 1.27;
+}
+.products__descr:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.tabs__items {
+  display: flex;
+  justify-content: center;
+  column-gap: 41px;
+  flex-wrap: wrap;
+  margin-bottom: 77px;
+}
+.tabs__item {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-family: "Raleway";
+  font-weight: 600;
+  line-height: 1.26;
+  letter-spacing: 1.2px;
+  transition: 0.3s all ease;
+}
+.tabs__item_active {
+  text-decoration: underline;
+  text-shadow: 0 0 2px #fff;
+}
+.tabs__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  row-gap: 30px;
+}
+.tabs__column {
+  padding: 0 15px;
+  flex: 0 1 25%;
+}
+.tabs__inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.tabs__link {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.tabs__link img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 271 / 270;
+  object-fit: cover;
+}
+
+.tabs__heading {
+  flex-grow: 1;
+  margin-bottom: 4px;
+}
+
+.tabs__heading,
+.tabs__inner span {
+  color: white;
+  font-size: 24px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  line-height: 33.6px;
+}
+.hide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 970px) {
+  .main__products {
+    margin-bottom: 70px;
+  }
+  .products__wrapper {
+    padding: 60px 0;
+  }
+  .tabs__column {
+    flex: 1 1 50%;
+  }
+}
+@media (max-width: 752px) {
+  .main__products {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 527px) {
+  .main__products {
+    margin-bottom: 30px;
+  }
+  .products__wrapper {
+    padding: 30px 0;
+  }
+  .tabs__column {
+    flex: 1 1 100%;
+  }
+  .tabs__items {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    margin-bottom: 30px;
+  }
+  .tabs__item {
+    font-size: 22px;
+    line-height: 2;
+  }
+}
+@media (hover: hover) {
+  .tabs__link {
+    transition: 0.3s all;
+  }
+  .tabs__link:hover {
+    transform: scale(0.97);
+  }
+}
