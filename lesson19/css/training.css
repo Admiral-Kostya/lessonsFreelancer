@@ -1,0 +1,115 @@
+.main__training {
+  background-color: rgb(196, 245, 255);
+  padding: 50px 0;
+}
+.trainig {
+}
+.training__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.training__grid {
+}
+.block-grid {
+  /*  display: grid; */
+  /* 3-и колонки на рядок з вказаними фіксованими розмірями */
+  /* grid-template-columns: 100px 200px 200px; */
+  /*скорочений приклад побудови колонок, буде 3-и колонки на рядок з вказаними розмірями (fr)*/
+  /* grid-template-columns: repeat(3, 1fr); */
+  /*приклад побудови рядків, усі рядки будуть з вказаними фіксованими розмірями*/
+  /*   grid-template-rows: repeat(3, 100px); */
+  /* Скорочений запис явної сітки (рядки / колонки): */
+  /*  grid-template: 50px 50px 50px / 100px 200px 150px; */
+  /* Розміри неявних колонок / рядка: */
+  /*  grid-auto-columns: 50px; */
+  /* Вирівнювання вмісту (контенту) вздовж горизонтальної осі: */
+  /* justify-items: stretch; */ /* за замовченням */
+  /* justify-items: start; */
+  /*  justify-items: center; */
+  /*  justify-items: center; */
+  /* Вирівнювання вмісту (контенту) вздовж вертикальной осі: */
+  /*  align-items: stretch; (за замовченням); */
+  /* align-items: start; */
+  /* align-items: center; */
+  /* align-items: end; */
+  /* Вирівнювання сітки вздовж горизонтальної осі (сітка має бути більше, ніж елементи): */
+  /*  justify-content: start;(за замовченням) */
+  /* justify-content: center; */
+  /* justify-content: end; */
+  /*  justify-content: space-around; */
+  /* justify-content: space-between; */
+  /*  justify-content: space-evenly; */
+  /* Вирівнювання сітки вздовж вертикальної осі (сітка має бути вище, ніж елементи): */
+  /*  align-content: start;(за замовченням) */
+  /*  align-content: center; */
+  /*  align-content: end; */
+  /*  align-content: space-around;
+  align-content: space-between;
+  align-content: space-evenly; */
+  /* gap: 20px; */
+}
+/* GRID-елементи 
+  Управління положенням елемента 
+  Початкова і кінечна позиція елементу по горизонталі  */
+/* .block-grid__item:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid
+} */
+/* GRID-AREA  */
+/* .grid-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "footer";
+}
+.grid-area--margin {
+  margin-bottom: 50px;
+}
+.grid-area > * {
+  padding: 15px;
+}
+.grid-area__header {
+  grid-area: header;
+  background-color: #77608d;
+}
+.grid-area__sidebar {
+  grid-area: sidebar;
+  background-color: #7a956b;
+}
+.grid-area__content {
+  grid-area: content;
+  background-color: #794f45;
+}
+.grid-area__footer {
+  grid-area: footer;
+  background-color: #77608d;
+}
+ */
+.block-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.block-grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+  background-color: rgb(117, 203, 19);
+  padding: 20px;
+}
+.block-grid__item:nth-child(7) {
+  grid-column: span 2;
+}
+.block-grid__item:nth-child(3),
+.block-grid__item:last-child {
+  grid-column: span 3;
+}

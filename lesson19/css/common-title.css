@@ -1,0 +1,25 @@
+.common-title {
+  color: #3c4242;
+  font-size: 34px;
+  font-family: "Core Sans C";
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: 0.68px;
+  display: flex;
+  column-gap: 20px;
+}
+.common-title:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 30px;
+  flex: 0 0 6px;
+  border-radius: 10px;
+  background-color: #8a33fd;
+}
+@media (max-width: 611px) {
+  .common-title {
+    font-size: 28px;
+  }
+}

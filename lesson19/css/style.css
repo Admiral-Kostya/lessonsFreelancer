@@ -1,0 +1,26 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url("main.css");
+@import url("common-title.css");
+@import url("first-block.css");
+@import url("arrival.css");
+@import url("zone.css");
+@import url("training.css");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
