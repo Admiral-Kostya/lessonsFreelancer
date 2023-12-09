@@ -1,0 +1,112 @@
+.block-cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+.block-cards__item {
+  border-radius: 12px;
+  position: relative;
+  padding: 60px 0 80px 30px;
+}
+.block-cards__item:nth-child(1) {
+  background-color: #fdbb43;
+}
+.block-cards__item:nth-child(2) {
+  background-color: #8e6fa8;
+}
+
+.block-cards__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: right;
+}
+.block-cards__content-block {
+  max-width: 264px;
+  position: relative;
+  z-index: 2;
+}
+.block-cards__label {
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  line-height: 1.66;
+  letter-spacing: 0.25px;
+  margin-bottom: 25px;
+}
+.block-cards__label_diff-color {
+  color: #fdbb43;
+}
+.block-cards__title {
+  color: white;
+  font-size: 34px;
+  font-family: "Core Sans C";
+  font-weight: 800;
+  line-height: 1.32;
+  margin-bottom: 10px;
+}
+.block-cards__sale-link {
+  color: white;
+  font-size: 16px;
+  font-family: "Core Sans C";
+  font-weight: 500;
+  line-height: 1.56;
+  letter-spacing: 0.25px;
+  margin-bottom: 42px;
+}
+.block-cards__items-link {
+  color: white;
+  font-size: 20px;
+  font-family: "Core Sans C";
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+@media (max-width: 1044px) {
+  .block-cards__image img {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 959.8px) {
+  .block-cards__image img {
+    object-position: top;
+  }
+}
+@media (max-width: 611px) {
+  .block-cards__sale-link {
+    margin-bottom: 20px;
+  }
+  .block-cards__label {
+    margin-bottom: 13px;
+  }
+  .block-cards__title {
+    font-size: 28px;
+  }
+  .block-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .block-cards__image img {
+    object-position: right;
+  }
+}
+@media (max-width: 530px) {
+  .block-cards__item {
+    padding: 20px 0 20px 30px;
+  }
+}
+@media (hover: hover) {
+  .block-cards__item {
+    transition: box-shadow 0.3s ease-in;
+  }
+  .block-cards__item:hover {
+    box-shadow: 3px 3px 12px 1px rgba(64, 64, 64, 0.5);
+  }
+  .block-cards__sale-link:hover,
+  .block-cards__items-link > a:hover {
+    text-decoration: underline;
+  }
+}

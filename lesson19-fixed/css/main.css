@@ -1,0 +1,24 @@
+.main__block-first {
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+.main__arrival,
+.main__zone {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 959.8px) {
+  .main__block-first {
+    padding-top: 160px;
+  }
+  .main__block-first,
+  .main__arrival {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 570px) {
+  .main__block-first,
+  .main__arrival {
+    margin-bottom: 40px;
+  }
+}
