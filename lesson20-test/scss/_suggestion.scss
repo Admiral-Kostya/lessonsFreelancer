@@ -1,0 +1,157 @@
+.suggestion {
+  /* .suggestion__common-title-block */
+
+  &__common-title-block {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 90px;
+    }
+  }
+
+  /* .suggestion__content */
+
+  &__content {
+  }
+}
+
+.content-suggestion {
+  /* .content-suggestion__items */
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  &__items {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    /* .content-suggestion__items_big */
+    grid-column: span 2;
+    &_big {
+      grid-row: span 2;
+      padding-bottom: 45px;
+      img {
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 398/728;
+        object-fit: cover;
+      }
+    }
+  }
+
+  /* .content-suggestion__link */
+
+  &__link {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    img {
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 369/277;
+      object-fit: cover;
+    }
+  }
+
+  /* .content-suggestion__heading */
+  &__heading {
+    flex-grow: 1;
+  }
+  &__heading,
+  span {
+    color: black;
+    font-size: 24px;
+    font-family: "Cormorant Infant";
+    font-weight: 700;
+    line-height: 1.4;
+    flex-grow: 1;
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .main {
+    &__suggestion {
+      margin-bottom: 70px;
+    }
+  }
+  .suggestion {
+    &__common-title-block {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .content-suggestion {
+    &__items {
+      grid-column: span 3;
+      &_big {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 725px) {
+  .main {
+    &__suggestion {
+      margin-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 527px) {
+  .main {
+    &__suggestion {
+      margin-bottom: 30px;
+    }
+  }
+
+  .common-title-block {
+    &__title {
+      &_suggestion {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .suggestion {
+    &__common-title-block {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .content-suggestion {
+    &__items {
+      grid-column: span 6;
+      &_big {
+        img {
+          aspect-ratio: 369/277;
+          object-position: top;
+        }
+      }
+    }
+  }
+}
+@media (hover: hover) {
+  .content-suggestion {
+    &__link {
+      img {
+        transition: 0.3s all;
+      }
+    }
+  }
+  .content-suggestion {
+    &__link {
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
