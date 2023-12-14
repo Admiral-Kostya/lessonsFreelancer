@@ -1,0 +1,149 @@
+.develop {
+  /* .develop__block */
+  &__block {
+  }
+}
+.block-develop {
+  /* .block-develop__items */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -19px;
+  &__items {
+    flex: 0 0 50%;
+    padding: 0 19px;
+  }
+
+  /* .block-develop__info */
+
+  &__info {
+    padding-top: 27px;
+    p {
+      color: #474747;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+  }
+
+  /* .block-develop__sub-title */
+
+  &__sub-title {
+    color: #d06b00;
+    font-size: 28px;
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  /* .block-develop__title */
+
+  &__title {
+    color: #0e333d;
+    font-size: 59px;
+    font-family: "DM Serif Text";
+    line-height: 1.46;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  /* .block-develop__images */
+
+  &__images {
+    display: flex;
+    column-gap: 22px;
+  }
+
+  /* .block-develop__image */
+
+  &__image {
+    flex: 0 1 50%;
+    img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 273/518;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 1130px) {
+  .block-develop {
+    row-gap: 30px;
+    justify-content: center;
+    &__info {
+      text-align: center;
+      padding-top: 0;
+    }
+    &__items {
+      flex: 1 1 100%;
+    }
+    &__image {
+      img {
+        aspect-ratio: 273/273;
+        object-position: top;
+      }
+    }
+  }
+}
+@media (max-width: 970px) {
+  .main {
+    &__develop {
+      margin-bottom: 70px;
+    }
+  }
+  .block-develop {
+    &__title {
+      font-size: 54px;
+    }
+  }
+}
+@media (max-width: 752px) {
+  .main {
+    &__develop {
+      margin-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 611px) {
+  .block-develop {
+    &__title {
+      font-size: 46px;
+      line-height: 1.2;
+    }
+    &__info {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 527px) {
+  .main {
+    &__develop {
+      margin-bottom: 30px;
+    }
+  }
+  .block-develop {
+    &__image {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+}
+@media (max-width: 527px) {
+  .block-develop {
+    &__sub-title {
+      font-size: 22px;
+    }
+    &__title {
+      font-size: 38px;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+    &__images {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+}
