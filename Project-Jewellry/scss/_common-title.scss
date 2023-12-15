@@ -1,0 +1,45 @@
+.common-title-block {
+  /* .common-title-block__label */
+
+  &__label {
+    color: #d06b00;
+    font-size: 15px;
+    font-family: "Inter";
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  /* .common-title-block__title */
+
+  &__title {
+    color: $mainDarkColor;
+    font-size: 48px;
+    font-family: "DM Serif Text";
+    line-height: 1.27;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &_products {
+      color: #fff;
+    }
+    &_suggestion {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  /* .common-title-block__descr */
+
+  &__descr {
+    color: #8c8b8a;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: 500;
+    line-height: 1.27;
+    &_products {
+      color: #fff;
+    }
+  }
+}

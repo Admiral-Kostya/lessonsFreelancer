@@ -1,0 +1,46 @@
+.common-btn,
+.common-btn-design {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  background-color: $mainDarkColor;
+  border-radius: 5px;
+  line-height: 1;
+}
+.common-btn {
+  padding: 10px 29px;
+  font-size: 20px;
+  font-family: "Merriweather";
+  font-weight: 700;
+}
+.common-btn-design {
+  font-size: 28px;
+  font-family: "DM Serif Text";
+  padding: 10px 40px;
+}
+@media (max-width: 527px) {
+  .common-btn-design {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .header__logo {
+    font-size: 22px;
+  }
+  .common-btn {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+}
+@media (hover: hover) {
+  .common-btn,
+  .common-btn-design {
+    transition: all 0.3s ease;
+  }
+  .common-btn:hover,
+  .common-btn-design:hover {
+    background-color: $mainDarkColor;
+    box-shadow: 2px 2px 10px $mainDarkColor;
+  }
+}
