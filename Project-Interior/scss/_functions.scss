@@ -1,0 +1,4 @@
+@function lineHeight($num1, $num2) {
+  $absolute: $num1 / $num2;
+  @return $absolute;
+}

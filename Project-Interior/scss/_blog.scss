@@ -1,0 +1,170 @@
+.blog {
+  /* .blog__title */
+
+  &__title {
+    text-align: center;
+    margin-bottom: 34px;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+  }
+  &__title._active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /* .blog__subtitle */
+
+  &__subtitle {
+    text-align: center;
+    color: $titleColor;
+    font-size: 24px;
+    font-family: "Marcellus SC";
+    margin-bottom: 54px;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 0.8s ease-in-out 0.8s;
+  }
+  &__subtitle._active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /* .blog__body */
+
+  &__body {
+  }
+}
+
+.body-blog {
+  /* .body-blog__item */
+  position: relative;
+  display: grid;
+  gap: 75px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  &__item {
+    position: relative;
+    padding: 200px 0;
+    transform: scale(0);
+    transition: transform 0.8s ease-in;
+  }
+  &__item._active {
+    &:nth-child(1) {
+      transition: transform 0.8s ease-in 0s;
+    }
+    &:nth-child(2) {
+      transition: transform 0.8s ease-in 0.8s;
+    }
+    &:nth-child(3) {
+      transition: transform 0.8s ease-in 1.6s;
+    }
+    &:nth-child(4) {
+      transition: transform 0.8s ease-in 2.4s;
+    }
+  }
+  &__item._active {
+    transform: scale(1);
+  }
+  &__decor {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: -57px;
+    bottom: -51px;
+    opacity: 0.2;
+    z-index: -2;
+    img {
+      max-width: 100%;
+      min-height: 100%;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      left: 10px;
+      bottom: -47px;
+      width: 80px;
+      height: 80px;
+      background: url("../img/hero/decor2.svg") no-repeat;
+      background-size: 80px 80px;
+    }
+    transform: scale(0);
+    transition: transform 0.8s ease-in 2.4s;
+  }
+  &__decor._active {
+    transform: scale(1);
+  }
+  &__link {
+    width: 100%;
+  }
+
+  /* .body-blog__image-block */
+
+  &__image-block {
+    img {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+
+  /* .body-blog__content */
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    /* padding: 40px 100px; */
+    min-height: 120px;
+    background-color: #0000007a;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .body-blog__heading */
+
+  &__heading {
+    /* text-align: center; */
+    color: $titleColor;
+    font-size: 32px;
+    font-family: "Marcellus SC";
+  }
+}
+@media (max-width: $laptop) {
+  .body-blog {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*  &__content {
+      padding: 20px 50px;
+    } */
+  }
+}
+@media (max-width: $mobile) {
+  .blog {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__subtitle {
+      margin-bottom: 35px;
+    }
+  }
+  .body-blog {
+    gap: 20px;
+    &__content {
+      /* padding: 30px 50px; */
+      min-height: 80px;
+    }
+  }
+}
+@media (hover: hover) {
+  .body-blog {
+    &__link {
+      &:hover .body-blog {
+        &__content {
+          background-color: rgba(0, 0, 0, 0.65);
+        }
+      }
+    }
+  }
+}
