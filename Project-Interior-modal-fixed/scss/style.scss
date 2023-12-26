@@ -1,0 +1,48 @@
+// Шрифти
+@import "_fonts.scss";
+// Обнулення стилів
+@import "_reset.scss";
+// Змінні
+@import "_variables.scss";
+// Функції
+@import "_functions.scss";
+// Міксіни
+@import "_mixins.scss";
+// Загальні стилі
+@import "_common-title.scss";
+// Стилі секцій
+@import "_header.scss";
+@import "_main.scss";
+@import "_hero.scss";
+@import "_about.scss";
+@import "_team.scss";
+@import "_contact.scss";
+@import "_blog.scss";
+@import "_reviews.scss";
+@import "_footer.scss";
+// Додаткові секції
+@import "_modal.scss";
+@import "_pageUp.scss";
+/* html {
+  scroll-behavior: smooth;
+} */
+body {
+  font-family: "Kanit";
+  background-color: $mainBgColor;
+  color: $textColor;
+}
+.wrapper {
+  overflow: clip; /* //позволяет работать с position: sticky; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
