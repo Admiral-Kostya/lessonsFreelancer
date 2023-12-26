@@ -1,0 +1,130 @@
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001;
+  &_show {
+    display: block;
+  }
+  &_hide {
+    display: none;
+  }
+  &_fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* .show {
+  display: block;
+} */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #615f5f;
+  &__descr {
+    text-align: center;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-size: 50px;
+    line-height: 21px;
+    color: #05e4f885;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+}
+.feed-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  input {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 45px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 25px;
+  }
+  &_modal {
+    margin: 0 auto;
+    input {
+      &:nth-child(3) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__button {
+    text-transform: capitalize;
+    border: 2px solid #c7ac8f;
+    border-radius: 37px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: lineHeight(16, 16);
+    @include linkStyle(40px, 5px 36px, 18px, #c7ac8f);
+  }
+}
+@media (max-width: 400px) {
+  .modal {
+    padding: 20px;
+    &__descr {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .feed-form {
+    max-width: 220px;
+  }
+}
+@media (max-width: 365px) {
+  .modal {
+    &__close {
+      right: -25px;
+    }
+  }
+}
+@media (hover: hover) {
+  .feed-form {
+    &__button {
+      transition: all 0.3s ease;
+      &:hover {
+        color: #252525;
+        background-color: #c7ac8f;
+      }
+    }
+  }
+}
