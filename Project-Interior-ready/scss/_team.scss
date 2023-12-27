@@ -1,0 +1,143 @@
+.team {
+  /* .team__title */
+
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+    transform: translate(0px, -100%);
+    opacity: 0;
+    transition: all 0.8s ease-in 0.5s;
+  }
+  &__title._active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  /* .team__body */
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -22px;
+    row-gap: 35px;
+  }
+
+  /* .team__column */
+
+  &__column {
+    flex: 1 1 25%;
+    padding: 0 22px;
+    transform: scale(0);
+    transition: transform 0.8s ease-in;
+  }
+
+  &__column._active {
+    transform: scale(1);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* transform: scale(0);
+    transition: transform 0.8s ease-in; */
+    /*    &:nth-child(4) {
+      display: none;
+    } */
+  }
+  /*  &__item._active {
+    &:nth-child(1) {
+      transition: transform 0.8s ease-in 0s;
+    }
+    &:nth-child(2) {
+      transition: transform 0.8s ease-in 0.8s;
+    }
+    &:nth-child(3) {
+      transition: transform 0.8s ease-in 1.6s;
+    }
+    &:nth-child(4) {
+      transition: transform 0.8s ease-in 2.4s;
+    }
+  } */
+  /*   &__item._active {
+    transform: scale(1);
+  } */
+  /* .team__img-link */
+
+  &__img-link {
+    img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 267/319;
+      object-fit: cover;
+    }
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+
+  /* .team__member-name */
+
+  &__member-name {
+    flex-grow: 1;
+    color: $titleColor;
+    font-size: 20px;
+    font-family: "Marcellus SC";
+    line-height: lineHeight(28, 20);
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  /* .team__text */
+
+  &__text {
+    color: $textColor;
+    line-height: lineHeight(28, 20);
+  }
+}
+@media (max-width: $laptop) {
+  .team {
+    &__column {
+      flex: 0 1 33.333%;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .team {
+    &__column {
+      flex: 0 1 50%;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .team {
+    &__title {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+    &__column {
+      flex: 0 1 100%;
+    }
+    &__img-link {
+      img {
+        aspect-ratio: 100/100;
+      }
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media (hover: hover) {
+  .team {
+    &__img-link {
+      overflow: hidden;
+      img {
+        transition: transform 0.3s ease-in;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

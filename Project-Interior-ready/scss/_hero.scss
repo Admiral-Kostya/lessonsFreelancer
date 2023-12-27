@@ -1,0 +1,157 @@
+.hero {
+  /* .hero__body */
+  position: relative;
+  min-height: 100svh;
+  &__body {
+  }
+
+  /* .hero__image */
+
+  &__image {
+    opacity: 0.5;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      /* object-position: right; */
+    }
+  }
+
+  /* .hero__decor */
+
+  &__decor {
+    position: absolute;
+    top: 34%;
+    right: -200px;
+    opacity: 0.2;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -39px;
+      left: -32px;
+      width: 142px;
+      height: 142px;
+      background: url("../img/hero/decor2.svg") no-repeat;
+    }
+  }
+}
+.body-hero {
+  /* .body-hero__title */
+  /* min-height: 100vh; */
+  max-width: 430px;
+  position: relative;
+  z-index: 2;
+  padding: 210px 0 170px 0;
+  &__title {
+    text-transform: capitalize;
+    color: #c7ac8f;
+    font-size: 64px;
+    font-family: "Marcellus SC";
+    line-height: 1.1;
+    transform: translateY(-20%);
+    opacity: 0;
+    transition: all 0.8s ease-in;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__title._active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* .body-hero__text */
+
+  &__text {
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 0.8s ease-out 0.9s;
+    p {
+      color: $textColor;
+      font-size: 20px;
+      line-height: 1.3;
+    }
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__text._active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* .body-hero__link */
+  &__button-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 0.8s ease-out 1.2s;
+  }
+  &__button-block._active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &__link {
+    text-transform: capitalize;
+    border: 1px solid #c7ac8f;
+    border-radius: 37px;
+    letter-spacing: 1px;
+    line-height: lineHeight(16, 16);
+    @include linkStyle(40px, 5px 36px, 16px, #c7ac8f);
+  }
+}
+@media (max-width: $laptop) {
+  .body-hero {
+    padding: 180px 0 150px 0;
+  }
+}
+@media (max-width: $tablet) {
+  .body-hero {
+    padding: 130px 0 100px 0;
+    &__title {
+      font-size: 48px;
+    }
+    &__text {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .hero {
+    &__decor {
+      display: none;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .body-hero {
+    padding: 90px 0 50px 0;
+    &__title,
+    &__text {
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+    &__button-block {
+      flex-direction: column;
+    }
+    &__link {
+      flex: 1 1 100%;
+    }
+  }
+}
+@media (hover: hover) {
+  .body-hero {
+    &__link {
+      transition: all 0.3s ease;
+      &:hover {
+        border: 1px solid inherit;
+        background-color: #a89178;
+        color: $textColor;
+      }
+    }
+  }
+}

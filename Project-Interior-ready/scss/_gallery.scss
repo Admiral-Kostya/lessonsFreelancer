@@ -1,0 +1,163 @@
+.gallery {
+  /* .gallery__content */
+  overflow: hidden;
+  position: relative;
+  transform: translateX(-200%);
+  transition: all 0.8s ease-out;
+  &__content {
+    background: #131313;
+    flex: 0 0 100%;
+    display: flex;
+  }
+
+  /* .gallery__body */
+
+  &__body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .gallery__title */
+
+  &__title {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  /* .gallery__text */
+
+  &__text {
+    flex-grow: 1;
+    color: $textColor;
+    line-height: lineHeight(22, 16);
+    font-size: 18px;
+    margin-bottom: 35px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 45px;
+      }
+    }
+  }
+
+  /* .gallery__button-block */
+
+  &__button-block {
+  }
+
+  /* .gallery__slider-block */
+
+  &__slider-block {
+  }
+}
+.gallery._active {
+  transform: translateX(0);
+}
+.block-number {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  color: rgba(65, 65, 65, 0.3);
+  font-size: 450px;
+  font-family: "Karantina";
+  /* z-index: -2; */
+}
+.block-button {
+  display: flex;
+  column-gap: 30px;
+  justify-content: flex-end;
+  button {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+.block-slider {
+  /* .block-slider__image */
+
+  &__image {
+    img {
+      /* min-height: 100%; */
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .gallery {
+    &__body {
+      padding: 20px 0px 30px 0px;
+    }
+    &__content {
+      /* margin-bottom: 30px; */
+    }
+  }
+  .block-number {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .gallery {
+    display: flex;
+    &__body {
+      width: 50%;
+      padding: 55px 50px 10px 0px;
+    }
+  }
+  .block-slider {
+    flex: 0 0 50%;
+    transform: translate(-100%, 0);
+    padding: 0 0 40% 0;
+    &__image {
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .gallery {
+    &__title {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+    &__text {
+      font-size: 16px;
+      p {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+@media (hover: hover) {
+  .block-button {
+    button {
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

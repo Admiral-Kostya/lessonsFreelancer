@@ -1,0 +1,56 @@
+.main {
+  /* .main__hero */
+  &__hero,
+  &__about,
+  &__team,
+  &__gallery,
+  &__contact,
+  &__blog {
+    margin-bottom: 63px;
+  }
+  &__reviews {
+    margin-bottom: 160px;
+  }
+}
+@media (max-width: $laptop) {
+  .main {
+    /* .main__hero */
+    &__hero,
+    &__about,
+    &__team,
+    &__gallery,
+    &__contact,
+    &__blog,
+    &__reviews {
+      margin-bottom: 40px;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .main {
+    /* .main__hero */
+    &__hero,
+    &__about,
+    &__team,
+    &__gallery,
+    &__contact,
+    &__blog,
+    &__reviews {
+      margin-bottom: 35px;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .main {
+    /* .main__hero */
+    &__hero,
+    &__about,
+    &__team,
+    &__gallery,
+    &__contact,
+    &__blog,
+    &__reviews {
+      margin-bottom: 30px;
+    }
+  }
+}
