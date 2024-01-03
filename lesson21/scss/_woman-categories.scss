@@ -1,0 +1,22 @@
+.categories-woman {
+  /* .categories-woman__title */
+
+  &__title {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .categories-woman {
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 570px) {
+  .categories-woman {
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}

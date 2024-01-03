@@ -1,0 +1,21 @@
+.categories-man {
+  /* .categories-man__body-grid */
+  &__title {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .categories-man {
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 570px) {
+  .categories-man {
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}

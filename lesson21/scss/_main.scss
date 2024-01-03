@@ -1,0 +1,79 @@
+.main {
+  &__hero {
+    margin-bottom: 130px;
+  }
+  &__explore,
+  &__arrival,
+  &__zone,
+  &__fashion,
+  &__man-categories,
+  &__woman-categories,
+  &__brands,
+  &__lime {
+    margin-bottom: 100px;
+  }
+  &__feedback {
+    margin-bottom: 140px;
+  }
+}
+@media (max-width: $laptop) {
+  .main {
+    &__hero {
+      margin-bottom: 100px;
+    }
+    &__explore,
+    &__arrival,
+    &__zone,
+    &__fashion,
+    &__man-categories,
+    &__woman-categories,
+    &__brands,
+    &__lime {
+      margin-bottom: 90px;
+    }
+    &__feedback {
+      margin-bottom: 110px;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .main {
+    &__hero {
+      margin-bottom: 80px;
+    }
+    &__explore,
+    &__arrival,
+    &__zone,
+    &__fashion,
+    &__man-categories,
+    &__woman-categories,
+    &__brands,
+    &__lime {
+      margin-bottom: 70px;
+    }
+
+    &__feedback {
+      margin-bottom: 90px;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .main {
+    &__hero {
+      margin-bottom: 60px;
+    }
+    &__explore,
+    &__arrival,
+    &__zone,
+    &__fashion,
+    &__man-categories,
+    &__woman-categories,
+    &__brands,
+    &__lime {
+      margin-bottom: 50px;
+    }
+    &__feedback {
+      margin-bottom: 75px;
+    }
+  }
+}

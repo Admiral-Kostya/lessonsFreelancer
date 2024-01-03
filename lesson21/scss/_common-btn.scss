@@ -1,0 +1,22 @@
+.common-btn {
+  font-family: "Causten";
+  font-weight: 700;
+  background-color: $mainTextColor;
+  border-radius: 8px;
+  @include linkStyle(61px, 10px 72px, 24px, $titleColor);
+  &_zone-link {
+    @include linkStyle(34px, 13px 25px, 12px, $mainTextColor);
+    border-radius: 4px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    background: none;
+  }
+  &_fashion-link {
+    font-weight: 600;
+
+    @include linkStyle(46px, 12px 44px, 18px, $titleColor);
+  }
+  /* &_zone-link-dark {
+    border: 1px solid #3c4242;
+  } */
+}

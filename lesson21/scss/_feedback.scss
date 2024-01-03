@@ -1,0 +1,135 @@
+.feedback {
+  /* .feedback__title */
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  /* .feedback__body */
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    margin: 0 -12px;
+  }
+
+  /* .feedback__column */
+
+  &__column {
+    padding: 0 12px;
+    flex: 0 1 33.333%;
+  }
+
+  /* .feedback__item */
+
+  &__item {
+    height: 100%;
+    padding: 23px;
+    border: 1.8px solid #bebcbd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  /* .feedback__image-block */
+
+  &__image-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  /* .feedback__list */
+
+  &__rating-list {
+    display: flex;
+    gap: 4px;
+  }
+  &__rating-list-item {
+    flex: 0 0 23px;
+    width: 23px;
+    height: 23px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  &__article-title {
+    color: $titleColor;
+    font-size: 22px;
+    font-family: "Core Sans C";
+    font-weight: 500;
+    letter-spacing: 0.44px;
+  }
+
+  &__text {
+    p {
+      color: $semi-darkTextColor;
+      font-size: 14px;
+      font-family: "Causten";
+      letter-spacing: 0.28px;
+      line-height: lineHeight(18, 14);
+    }
+  }
+
+  /* .feedback__buttons */
+
+  &__buttons {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 7px;
+  }
+
+  /* .feedback__left-button */
+
+  &__left-button,
+  &__middle-button,
+  &__right-button {
+    flex: 0 0 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  &__left-button {
+    background-color: $titleColor;
+  }
+
+  /* .feedback__middle-button */
+
+  &__middle-button,
+  &__right-button {
+    background-color: #bebcbd4d;
+  }
+
+  /* .feedback__right-button */
+
+  &__right-button {
+  }
+}
+@media (max-width: 900px) {
+  .feedback {
+    &__column {
+      flex: 0 1 50%;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .feedback {
+    &__column {
+      flex: 0 1 100%;
+    }
+  }
+}

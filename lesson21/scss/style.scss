@@ -1,0 +1,49 @@
+// Шрифти
+@import "_fonts.scss";
+// Обнулення стилів
+@import "_reset.scss";
+// Змінні
+@import "_variables.scss";
+// Функції
+@import "_functions.scss";
+// Міксіни
+@import "_mixins.scss";
+// Загальні стилі
+@import "_common-title.scss";
+@import "_common-btn.scss";
+@import "_common-grid-container.scss";
+// Стилі секцій
+@import "_header.scss";
+@import "_main.scss";
+@import "_hero.scss";
+@import "_explore.scss";
+@import "_arrival.scss";
+@import "_zone.scss";
+@import "_fashion.scss";
+@import "_man-categories.scss";
+@import "_woman-categories.scss";
+@import "_brands.scss";
+@import "_limelight";
+@import "_feedback.scss";
+@import "_footer.scss";
+
+/* html {
+  scroll-behavior: smooth;
+} */
+/* body {
+} */
+.wrapper {
+  overflow: clip; /* //позволяет работать с position: sticky; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
