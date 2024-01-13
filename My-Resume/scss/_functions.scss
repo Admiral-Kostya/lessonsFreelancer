@@ -1,0 +1,12 @@
+@function lineHeight($num1, $num2) {
+  $absolute: $num1 / $num2;
+  @return $absolute;
+}
+@function toRem($num1, $num2: 16) {
+  $rez: math.div($num1, $num2) + rem;
+  @return $rez;
+}
+@function toEm($num1, $num2: 16) {
+  $rez2: math.div($num1, $num2) + em;
+  @return $rez2;
+}
