@@ -1,0 +1,53 @@
+// Шрифти
+@import "_fonts.scss";
+// Обнулення стилів
+@import "_reset.scss";
+body {
+  color: #000;
+}
+
+/* .active {
+  background-color: blue;
+} */
+
+.wrapper {
+  overflow: clip; /* //позволяет работать с position: sticky; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .list {
+  font-size: 10px;
+} */
+.wrapper > main {
+  flex-grow: 1;
+}
+.page > p {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.button,
+.button-top,
+.link {
+  border-radius: 15px;
+  background-color: rgb(116, 116, 116);
+  color: rgb(157, 255, 0);
+  min-height: 40px;
+  padding: 10px 30px;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
