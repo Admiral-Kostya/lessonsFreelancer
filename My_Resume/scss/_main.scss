@@ -1,0 +1,45 @@
+.main {
+  position: relative;
+  &__hero,
+  &__about,
+  &__skills,
+  &__exper,
+  &__portfolio {
+    margin-bottom: toRem(80);
+  }
+}
+@media (max-width: $laptop) {
+  .main {
+    position: relative;
+    &__hero,
+    &__about,
+    &__skills,
+    &__exper,
+    &__portfolio {
+      margin-bottom: toRem(70);
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .main {
+    &__hero,
+    &__about,
+    &__skills,
+    &__exper,
+    &__portfolio {
+      margin-bottom: toRem(60);
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .main {
+    position: relative;
+    &__hero,
+    &__about,
+    &__skills,
+    &__exper,
+    &__portfolio {
+      margin-bottom: toRem(50);
+    }
+  }
+}

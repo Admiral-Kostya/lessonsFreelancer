@@ -1,0 +1,49 @@
+.sidepanel {
+  position: fixed;
+  top: 30%;
+  right: toRem(50);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: toRem(340);
+  transform: translateX(300%);
+  transition: transform 0.8s ease;
+  z-index: 3;
+  &__link {
+    &:hover {
+      svg path {
+        fill: $mainDecorColor;
+      }
+    }
+  }
+  &__divider {
+    width: toRem(2);
+    height: toRem(70);
+    background-color: $mainTextColor;
+  }
+  &__text {
+    height: toRem(150);
+    width: toRem(25);
+    font-weight: 700;
+    font-size: toRem(16);
+    span {
+      transform: rotate(-90deg) translate(-25%, -393%);
+      display: inline-block;
+      width: toRem(150);
+    }
+  }
+}
+.sidepanel._active {
+  transform: translateX(0);
+}
+@media (max-width: toEm(660)) {
+  .sidepanel {
+    opacity: 0.4;
+  }
+}
+@media (max-width: toEm(1300)) {
+  .sidepanel {
+    display: none;
+  }
+}

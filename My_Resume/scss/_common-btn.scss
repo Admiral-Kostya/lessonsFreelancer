@@ -1,0 +1,7 @@
+.common-btn {
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: toRem(1);
+  background-color: $mainDecorColor;
+  @include linkStyle(toRem(45), toRem(10) toRem(25), inherit, $mainTextColor);
+}

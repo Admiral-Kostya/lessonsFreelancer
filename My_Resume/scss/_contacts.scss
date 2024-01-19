@@ -1,0 +1,217 @@
+.body-contacts {
+  /* .body-contacts__image */
+  margin-bottom: toRem(50);
+  &__image {
+    display: none;
+    border-radius: toRem(10);
+    overflow: hidden;
+    position: relative;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.8s ease;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  &__image._active {
+    transform: scale(1);
+    opacity: 1;
+  }
+  /* .body-contacts__content */
+
+  &__content {
+  }
+  &__way {
+    display: inline-block;
+    margin-bottom: toRem(20);
+    font-weight: 700;
+    transform: translateY(40%);
+    opacity: 0;
+    transition: all 0.8s ease 0.8s;
+  }
+  &__way._active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* .body-contacts__title-block */
+
+  &__title-block {
+    margin-bottom: toRem(35);
+  }
+  &__heading-mb {
+    margin-bottom: toRem(25);
+  }
+  /* .body-contacts__social-box */
+
+  &__social-box {
+  }
+
+  /* .body-contacts__form */
+
+  &__form {
+    margin-bottom: toRem(30);
+  }
+}
+
+.box-social {
+  /* .box-social__link */
+  transform: translateY(40%);
+  opacity: 0;
+  transition: all 0.8s ease 0.8s;
+  display: flex;
+  gap: toRem(25);
+  &__link {
+    width: toRem(30);
+    height: toRem(30);
+    flex: 0 0 toRem(30);
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.box-social._active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.form {
+  /* .form__title */
+  transform: translateY(40%);
+  opacity: 0;
+  transition: all 0.8s ease 0.8s;
+  &__title {
+    font-weight: 700;
+    margin-bottom: toRem(30);
+  }
+
+  /* .form__body */
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: toRem(30);
+    margin: 0 toRem(-12.5);
+  }
+
+  /* .form__item */
+
+  &__item {
+    /* .form__item_text-area */
+    min-width: toRem(250);
+    flex: 1 1 50%;
+    padding: 0 toRem(12.5);
+    input {
+      color: #37393f;
+      width: 100%;
+      padding: toRem(15) toRem(38) toRem(15) toRem(20);
+      border: toRem(1) solid #dddddd;
+      background-color: #f8f8f8;
+    }
+    &_text-area {
+      flex: 1 1 100%;
+      min-height: toRem(200);
+    }
+  }
+
+  /* .form__text-area */
+
+  &__text-area {
+    width: 100%;
+    height: 100%;
+    padding: toRem(21) toRem(20) toRem(15);
+
+    border: toRem(1) solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 0 !important;
+  }
+}
+.form._active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.form-button {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.8s ease 0.5s;
+}
+.form-button._active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.jsBoxSocial {
+  display: flex;
+  justify-content: flex-end;
+  gap: toRem(20);
+  margin-top: toRem(30);
+}
+@media (min-width: $laptop) {
+  .body-contacts {
+    padding: toRem(0) toRem(25);
+    display: flex;
+    gap: toRem(70);
+    &__image {
+      display: block;
+      flex: 0 0 37%;
+    }
+    &__content {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+@media (max-width: $laptop) {
+  .body-contacts {
+    flex-direction: column;
+  }
+}
+@media (max-width: $mobile) {
+  .body-contacts {
+    &__form {
+      margin-bottom: toRem(20);
+    }
+    &__title-block {
+      margin-bottom: toRem(20);
+    }
+    &__way {
+      margin-bottom: toRem(10);
+    }
+  }
+  .form {
+    &__body {
+      row-gap: toRem(15);
+    }
+    &__item {
+      &_text-area {
+        min-height: toRem(100);
+      }
+    }
+    &__title {
+      margin-bottom: toRem(20);
+    }
+  }
+}
+@media (hover: hover) {
+  .form-button {
+    transition: all 0.3s ease;
+    &:hover {
+      border-radius: toRem(15);
+      background-color: rgb(255, 176, 29);
+    }
+  }
+  .box-social {
+    &__link {
+      svg {
+        &:hover {
+          path {
+            fill: $mainDecorColor;
+          }
+        }
+      }
+    }
+  }
+}
