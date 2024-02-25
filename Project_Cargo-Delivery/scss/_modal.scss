@@ -1,0 +1,139 @@
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001;
+  &_show {
+    display: block;
+  }
+  &_hide {
+    display: none;
+  }
+  &_fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* .show {
+  display: block;
+} */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: toRem(10);
+  padding: toRem(30);
+  background-color: #808080;
+  /*  width: 80%; */
+  &__descr {
+    text-align: center;
+    font-size: toRem(24);
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    &:not(:last-child) {
+      margin-bottom: toRem(40);
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: toRem(-40);
+    font-size: toRem(50);
+    line-height: toRem(21);
+    color: #c7ac8f;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+}
+.feed-form {
+  display: flex;
+  flex-direction: column;
+  max-width: toRem(350);
+  input {
+    padding-left: toRem(10);
+    padding-right: toRem(10);
+    height: toRem(45);
+    font-weight: 400;
+    color: #000;
+    font-size: toRem(16);
+    border-radius: toRem(5);
+    background-color: #fff;
+    margin-bottom: toRem(25);
+  }
+  &_modal {
+    margin: 0 auto;
+    input {
+      &:nth-child(3) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+  &__button {
+    text-transform: capitalize;
+    background-color: $mainDecorColor;
+    border-radius: toRem(37);
+    letter-spacing: toRem(1);
+    font-weight: 500;
+    line-height: lineHeight(16, 16);
+    @include linkStyle(
+      toRem(40),
+      toRem(5) toRem(36),
+      toRem(18),
+      $mainTextColor
+    );
+  }
+}
+
+@media (max-width: toEm(450)) {
+  .modal {
+    width: calc(100% - toRem(40));
+    &__close {
+      top: 110%;
+      right: 44%;
+    }
+  }
+  .feed-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: toEm(400)) {
+  .modal {
+    padding: toRem(20);
+    &__descr {
+      &:not(:last-child) {
+        margin-bottom: toRem(20);
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
+  .feed-form {
+    &__button {
+      transition: all 0.3s ease;
+      &:hover {
+        color: #252525;
+        background-color: rgb(255, 192, 74);
+      }
+    }
+  }
+}

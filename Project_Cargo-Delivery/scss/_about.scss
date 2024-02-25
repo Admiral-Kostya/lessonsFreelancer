@@ -1,0 +1,34 @@
+.about {
+  /* .about__container */
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: toRem(24);
+    @media (max-width: $tablet) {
+      grid-template-columns: auto;
+      @include adaptiveValue("row-gap", 48, 32);
+    }
+  }
+
+  /* .about__common-title */
+
+  &__common-title {
+  }
+
+  /* .about__text-block */
+
+  &__text-block {
+    padding-top: toRem(47);
+    line-height: 1.4;
+    p {
+      &:not(:last-child) {
+        margin-bottom: toRem(30);
+      }
+    }
+    @media (max-width: $tablet) {
+      padding-top: 0;
+    }
+  }
+}
+//38teudat#

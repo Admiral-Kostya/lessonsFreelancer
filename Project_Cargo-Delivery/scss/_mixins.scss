@@ -1,0 +1,34 @@
+@mixin linkStyle(
+  $min-height,
+  $padding,
+  $font-size,
+  $color,
+  $display: inline-flex,
+  $justify-content: center,
+  $align-items: center,
+  $text-align: center
+) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  text-align: $text-align;
+  min-height: $min-height;
+  padding: $padding;
+  font-size: $font-size;
+  color: $color;
+}
+@mixin absheader($pos, $bgColor, $width: 100%, $left: 0, $top: 0, $index: 50) {
+  width: $width;
+  top: $top;
+  left: $left;
+  z-index: $index;
+  position: $pos;
+  background-color: $bgColor;
+}
+@mixin img($width, $height, $objectPosition: center, $obFit: cover) {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: $width #{"/"} $height;
+  object-fit: $obFit;
+  object-position: $objectPosition;
+}

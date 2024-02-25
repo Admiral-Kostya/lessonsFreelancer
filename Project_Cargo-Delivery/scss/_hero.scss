@@ -1,0 +1,101 @@
+.hero {
+  /* .hero__wrapper */
+  position: relative;
+  &__wrapper {
+  }
+
+  /* .hero__slide */
+
+  &__slide {
+  }
+
+  /* .hero__arrow-prev */
+  &__arrow-block {
+    position: absolute;
+    right: 10%;
+    z-index: 3;
+    @include adaptiveValue("bottom", 75, 20);
+    // bottom: toRem(75);
+  }
+}
+.block-arrow {
+  display: flex;
+  gap: toRem(32);
+  &__arrow-prev,
+  &__arrow-next {
+    flex: 0 0 toRem(40);
+    width: toRem(40);
+    height: toRem(40);
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $primaryLight;
+      }
+      &:hover svg {
+        path {
+          stroke: #fff;
+        }
+      }
+    }
+  }
+  &__arrow-prev,
+  &__arrow-next {
+    svg {
+      max-width: toRem(23);
+      max-height: toRem(23);
+    }
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.slide-hero {
+  /* .slide-hero__container */
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__container {
+    position: relative;
+    z-index: 3;
+  }
+
+  /* .slide-hero__body */
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    @media (max-width: toEm(720)) {
+      object-position: 63%;
+    }
+  }
+  &__body {
+    max-width: toRem(600);
+    @include adaptiveValue("padding-top", 200, 120);
+    /*  @media (max-width: toEm(480)) {
+      @include adaptiveValue("padding-top", 200, 130);
+    } */
+    padding-top: toRem(200);
+    min-height: 100vh;
+  }
+
+  /* .slide-hero__common-title */
+
+  &__common-title {
+  }
+}

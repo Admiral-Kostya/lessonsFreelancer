@@ -1,0 +1,75 @@
+.rate {
+  /* .rate__container */
+
+  &__container {
+  }
+
+  /* .rate__body */
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: toRem(24);
+    align-items: start;
+    @include adaptiveValue("column-gap", 126, 40, 0, 1200, 769);
+    @media (max-width: toEm(900)) {
+      grid-template-columns: auto;
+      justify-items: start;
+    }
+  }
+
+  /* .rate__common-title */
+
+  &__common-title {
+  }
+
+  /* .rate__info */
+
+  &__info {
+    display: flex;
+
+    flex-wrap: wrap;
+    row-gap: toRem(24);
+    margin: 0 toRem(-12);
+  }
+
+  /* .rate__column */
+
+  &__column {
+    padding: 0 toRem(12);
+    flex: 0 1 50%;
+    &:last-child {
+      flex: 1 1 100%;
+    }
+    @media (max-width: toEm(440)) {
+      flex: 1 1 100%;
+    }
+  }
+
+  /* .rate__item */
+
+  &__item {
+    min-height: 100%;
+    padding: toRem(24);
+    border-radius: toRem(24);
+    background-color: #fff;
+  }
+
+  /* .rate__title */
+
+  &__title {
+    font-weight: 700;
+    font-size: toRem(18);
+    line-height: 1.3;
+    color: $primaryDark;
+    &:not(:last-child) {
+      margin-bottom: toRem(16);
+    }
+  }
+
+  /* .rate__descr */
+
+  &__descr {
+    line-height: 1.4;
+  }
+}
