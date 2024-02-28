@@ -1,0 +1,75 @@
+.body-content {
+  /* .body-content__column */
+  display: flex;
+  flex-wrap: wrap;
+  @include adaptiveValue("row-gap", 40, 10, 0, 1840, 440);
+  margin-top: toRem(0);
+  margin-bottom: toRem(0);
+  @include adaptiveValue("margin-left", -20, -5, 0, 1840, 440);
+  @include adaptiveValue("margin-right", -20, -5, 0, 1840, 440);
+  &__column {
+    @include adaptiveValue("padding-left", 20, 5, 0, 1840, 440);
+    @include adaptiveValue("padding-right", 20, 5, 0, 1840, 440);
+    padding-top: toRem(0);
+    padding-bottom: toRem(0);
+    flex: 0 1 50%;
+    &_full-width {
+      flex: 1 1 100%;
+    }
+    @media (max-width: toEm(850)) {
+      flex: 1 1 100%;
+    }
+  }
+
+  /* .body-content__item */
+
+  &__item {
+    height: 100%;
+    background: linear-gradient(199deg, #192230 0, #14345b 55%, #192230 100%);
+    @include adaptiveValue("padding-top", 55, 15, 0, 1840, 440);
+    @include adaptiveValue("padding-left", 55, 15, 0, 1840, 440);
+    @include adaptiveValue("padding-right", 55, 15, 0, 1840, 440);
+    @include adaptiveValue("padding-bottom", 30, 10, 0, 1840, 440);
+    &_red-bg {
+      background: linear-gradient(199deg, #192230 0, #4f151d 79%, #192230 100%);
+    }
+  }
+
+  /* .body-content__text */
+
+  &__text {
+    @include adaptiveValue(" font-size", 30, 20, 0, 1840, 440);
+    line-height: 1.4;
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: toRem(10) toRem(12);
+      border-radius: toRem(50);
+      background: linear-gradient(199deg, #192230 0, #14345b 55%, #192230 100%);
+      transition: all 0.3s ease;
+      @media (any-hover: hover) {
+        &:hover {
+          color: #000;
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  /* .body-content__title */
+
+  &__title {
+    @include adaptiveValue(" font-size", 79, 36, 0, 1840, 440);
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+    &_blue-color {
+      color: $mainColorFirst;
+    }
+    &_red-color {
+      color: $mainColorSecond;
+    }
+  }
+}

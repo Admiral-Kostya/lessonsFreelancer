@@ -1,0 +1,152 @@
+.career {
+  /* .career__container */
+
+  &__container {
+  }
+
+  /* .career__body */
+
+  &__body {
+  }
+}
+.body-with-image {
+  /* .body-with-image__block-image */
+  display: flex;
+  @media (max-width: toEm(850)) {
+    flex-direction: column;
+  }
+  @media (max-width: toEm(850)) {
+    &_diff-direction {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__block-image {
+    flex: 1 1 50%;
+    position: relative;
+    img {
+      aspect-ratio: 940/1000;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -1%;
+      left: -1%;
+      width: 30%;
+      height: 30%;
+      transform: rotateY(180deg);
+      background: url("../img/hero/rectangle.png") 0 0 / cover no-repeat;
+      @media (max-width: toEm(850)) {
+        top: -1%;
+        left: -1%;
+        transform: rotate(180deg);
+      }
+    }
+    &_diff-before {
+      &:before {
+        bottom: -2px;
+        left: 71%;
+        transform: rotateY(360deg);
+        @media (max-width: toEm(850)) {
+          top: -1%;
+          left: 70%;
+          transform: rotate(270deg);
+        }
+      }
+    }
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  &__block-image._active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  /* .body-with-image__content */
+
+  &__content {
+    flex: 1 1 50%;
+    background: linear-gradient(199deg, #192230 0, #14345b 55%, #192230 100%);
+    @include adaptiveValue("padding", 40, 0, 0, 1840, 850);
+    transform: translateY(40%);
+    opacity: 0;
+    transition: all 0.6s ease 0.6s;
+  }
+  &__content._active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* .body-with-image__title */
+
+  &__title {
+    @include adaptiveValue(" font-size", 79, 36, 0, 1840, 440);
+    &:not(:last-child) {
+      @include adaptiveValue(" margin-bottom", 70, 25, 0, 1840, 440);
+    }
+    @media (max-width: toEm(850)) {
+      padding-top: toRem(15);
+      padding-left: toRem(15);
+    }
+  }
+
+  /* .body-with-image__list */
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue(" row-gap", 40, 10, 0, 1840, 440);
+    &_bg-common {
+      background: linear-gradient(
+        45deg,
+        rgb(10, 36, 75) 0%,
+        rgb(3, 50, 105) 18%,
+        rgb(10, 15, 24) 100%
+      );
+      @include adaptiveValue("padding-top", 55, 15, 0, 1840, 440);
+      @include adaptiveValue("padding-left", 55, 15, 0, 1840, 440);
+      @include adaptiveValue("padding-right", 55, 15, 0, 1840, 440);
+      @include adaptiveValue("padding-bottom", 30, 10, 0, 1840, 440);
+    }
+  }
+  /* .body-with-image_item */
+
+  &__item {
+    background: linear-gradient(
+      45deg,
+      rgb(10, 36, 75) 0%,
+      rgb(3, 50, 105) 18%,
+      rgb(10, 15, 24) 100%
+    );
+    @include adaptiveValue("padding-top", 55, 15, 0, 1840, 440);
+    @include adaptiveValue("padding-left", 55, 15, 0, 1840, 440);
+    @include adaptiveValue("padding-right", 55, 15, 0, 1840, 440);
+    @include adaptiveValue("padding-bottom", 30, 10, 0, 1840, 440);
+    &_bg-none {
+      background: transparent;
+      padding: toRem(0);
+    }
+  }
+  /* .body-with-image__list-title */
+
+  &__list-title {
+    color: $mainColorFirst;
+    line-height: 1.1;
+    @include adaptiveValue(" font-size", 79, 36, 0, 1840, 440);
+    &:not(:last-child) {
+      margin-bottom: toRem(17);
+    }
+  }
+
+  /* .body-with-image__text */
+
+  &__text,
+  &__info {
+    @include adaptiveValue(" font-size", 30, 18, 0, 1840, 440);
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,34 @@
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: toRem(40);
+  right: toRem(40);
+  width: toRem(36);
+  height: toRem(36);
+  border: toRem(2) solid $mainColorFirst;
+  background: $mainColorFirst;
+  border-radius: 50%;
+  &:before {
+    content: "";
+    position: absolute;
+    border-left: toRem(3) solid #fff;
+    border-bottom: toRem(3) solid #fff;
+    width: toRem(14);
+    height: toRem(14);
+    top: toRem(12);
+    left: toRem(9.5);
+    transform: rotate(135deg);
+  }
+  img {
+    width: 100%;
+  }
+}
+@media (any-hover: hover) {
+  .pageup {
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $mainColorSecond;
+      border: toRem(2) solid $mainColorSecond;
+    }
+  }
+}

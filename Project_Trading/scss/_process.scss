@@ -1,0 +1,32 @@
+.process {
+  /* .process__container */
+
+  &__container {
+  }
+
+  /* .process__wrapper */
+
+  &__wrapper {
+    background: linear-gradient(199deg, #192230 0, #4f151d 79%, #192230 100%);
+    @include adaptiveValue("padding", 40, 0, 0, 1840, 850);
+  }
+
+  /* .process__title */
+
+  &__title {
+    @include adaptiveValue(" font-size", 79, 36, 0, 1840, 440);
+    &:not(:last-child) {
+      @include adaptiveValue(" margin-bottom", 70, 25, 0, 1840, 440);
+    }
+    @media (max-width: toEm(850)) {
+      padding-left: toRem(15);
+      padding-top: toRem(15);
+    }
+  }
+}
+.course {
+  /* .course__body */
+
+  &__body {
+  }
+}

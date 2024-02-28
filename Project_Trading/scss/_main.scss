@@ -1,0 +1,12 @@
+.main {
+  /* .main__hero */
+
+  &__hero,
+  &__info,
+  &__career,
+  &__course,
+  &__benefits,
+  &__process {
+    @include adaptiveValue("margin-bottom", 40, 20, 0, 1840, 440);
+  }
+}
